@@ -41,9 +41,7 @@ body {
     padding-left: 0;
 }
 
-.main-header-list-item {
-    /* background-image: url("img/check_icon_346.png"); */
-}
+.main-header-list-item {}
 
 .main-header-list-item::before {
     content: url('../img/check_icon_346.png');
@@ -200,5 +198,3 @@ body {
     word-wrap: break-word;
     word-break: normal;
 }
-
-@media(max-width: 800px) {}
