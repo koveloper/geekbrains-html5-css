@@ -62,7 +62,6 @@ body {
 .about-product {
     display: flex;
     justify-content: space-between;
-    /* margin-bottom: 100px; */
     padding: 50px;
     box-sizing: border-box;
     margin: 0;
