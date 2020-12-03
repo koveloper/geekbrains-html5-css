@@ -291,8 +291,8 @@ body {
 }
 .prices-template {
   background-color: #445162;
-  margin: 0 45px 0 0 ;
-  padding: 16px 0 20px 0;
+  margin: 0 45px 0 0;
+  padding: 0 0 20px 0;
   align-self: flex-end;
   display: flex;
   flex-direction: column;
@@ -302,6 +302,8 @@ body {
 }
 .prices-template-title {
   margin: 0;
+  padding: 16px;
+  box-sizing: border-box;
   text-align: center;
   font-size: 24px;
   line-height: 30px;
@@ -312,9 +314,9 @@ body {
   background-color: white;
   border: 1px solid #445162;
   box-sizing: border-box;
-  padding: 17px 0 19px 0;
+  padding: 18px;
   text-align: center;
-  margin: 17px 0;
+  margin: 0 0 10px 0;
   font-size: 40px;
   line-height: 30px;
   font-weight: 400;
@@ -335,7 +337,9 @@ body {
 .prices-template-buy {
   text-transform: uppercase;
   box-sizing: border-box;
-  margin: 19px 20px 0 20px;
+  display: block;
+  width: 260px;
+  margin: 19px auto 0 auto;
   padding: 14px 0;
   border-radius: 8px;
   outline: none;
@@ -362,7 +366,7 @@ body {
   padding: 50px 50px 50px 50px;
 }
 .contacts-title {
-  margin: 0;
+  margin: 0 0 30px 0;
   width: 100%;
   text-align: center;
   font-size: 30px;
@@ -373,7 +377,7 @@ body {
 .contacts-message {
   display: flex;
   flex-direction: column;
-  margin: 30px 45px 0 0;
+  margin: 0 45px 0 0;
 }
 .contacts-message-user-name {
   background-color: white;
@@ -387,6 +391,7 @@ body {
   padding: 14px 10px;
   border-radius: 8px;
   width: 500px;
+  box-sizing: border-box;
 }
 .contacts-message-user-email {
   background-color: white;
@@ -400,6 +405,7 @@ body {
   padding: 14px 10px;
   border-radius: 8px;
   width: 500px;
+  box-sizing: border-box;
 }
 .contacts-message-user-message {
   background-color: white;
@@ -413,6 +419,7 @@ body {
   padding: 14px 10px;
   border-radius: 8px;
   width: 500px;
+  box-sizing: border-box;
   height: 170px;
   resize: none;
 }
@@ -424,13 +431,13 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #445162;
-  margin: 0;
+  margin: 0 auto;
   padding: 14px 10px;
   border-radius: 8px;
-  width: 500px;
+  width: 140px;
+  box-sizing: border-box;
   font-weight: 700;
   text-transform: uppercase;
-  width: 140px;
   align-self: center;
   cursor: pointer;
 }
@@ -443,7 +450,7 @@ body {
 .contacts-our-data {
   display: flex;
   flex-direction: column;
-  margin: 30px 0 0 0 ;
+  margin: 0;
 }
 .contacts-our-data-main {
   font-size: 16px;
