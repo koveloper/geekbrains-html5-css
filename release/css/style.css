@@ -321,3 +321,65 @@ body {
 .activities-list > :nth-child(4) > .activity-label::before {
   content: "\e903";
 }
+.ideas {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fbfaf8;
+  height: 700px;
+  box-sizing: border-box;
+}
+.ideas-header {
+  padding: 0;
+  margin: 83px 0 24px 0;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+}
+.ideas-info {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #8c8c8c;
+  width: 757px;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+.ideas-images {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.ideas-images > :nth-child(1) {
+  position: absolute;
+  width: 770px;
+  height: 400px;
+  z-index: 10;
+  bottom: 0;
+  right: 50%;
+  transform: translate(calc(-50% + 770px - 230px), 0);
+}
+.ideas-images > :nth-child(2) {
+  position: absolute;
+  margin: 0 auto;
+  z-index: 20;
+  width: 770px;
+  height: 482px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.ideas-images > :nth-child(3) {
+  position: absolute;
+  width: 770px;
+  height: 400px;
+  z-index: 10;
+  bottom: 0;
+  left: 50%;
+  transform: translate(calc(50% - 770px + 230px), 0);
+}
