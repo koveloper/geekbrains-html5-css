@@ -174,12 +174,12 @@
         </main>
         <footer class="contacts">
             <h2 class="contacts-title">Contacts</h2>
-            <div class="contacts-message">
-                <input class="contacts-message-user-name" type="text" name="user-name" id="user-name" placeholder="Your name:">
-                <input class="contacts-message-user-email" type="email" name="user-email" id="user-email" placeholder="Your email:">
-                <textarea class="contacts-message-user-message" name="user-message" id="user-message" cols="30" rows="10" placeholder="Your message:"></textarea>
-                <input class="contacts-message-commit" type="button" value="send">
-            </div>
+            <form class="contacts-message">
+                <input class="contacts-message-user-name" type="text" name="user-name" id="user-name" placeholder="Your name:" required>
+                <input class="contacts-message-user-email" type="email" name="user-email" id="user-email" placeholder="Your email:" required pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$">
+                <textarea class="contacts-message-user-message" name="user-message" id="user-message" cols="30" rows="10" placeholder="Your message:" required></textarea>
+                <input class="contacts-message-commit" type="submit" value="send">
+            </form>
             <div class="contacts-our-data">
                 <a class="contacts-our-data-main _main-1" href="#">here_your_login_skype</a>
                 <a class="contacts-our-data-main _main-2" href="#">279679659</a>
