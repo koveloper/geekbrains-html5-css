@@ -189,19 +189,19 @@ body {
   line-height: 24px;
   font-weight: 300;
   color: #ffffff;
+  margin: 0 0 52px 0;
 }
 .header-center-template-get-started {
   width: 170px;
+  font-family: Raleway;
   background-color: #998675;
   border-radius: 3px;
-  font-family: Raleway;
   font-size: 14px;
   line-height: 23px;
   font-weight: 800;
   text-transform: uppercase;
   color: #ffffff;
   padding: 20px;
-  margin: 52px 0 0 0;
   box-sizing: border-box;
   outline: none;
   border: none;
@@ -382,4 +382,52 @@ body {
   bottom: 0;
   left: 50%;
   transform: translate(calc(50% - 770px + 230px), 0);
+}
+.word-press-theme {
+  padding: 50px;
+  background-color: #f4f5f8;
+  background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+  display: flex;
+  justify-content: center;
+}
+.word-press-theme-title {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 470px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.word-press-theme-title-waxcom {
+  color: #c7b299;
+}
+.word-press-theme-title::after {
+  content: "Don't Forget to Rate the Template. Thanks so much!";
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #615855;
+  margin: 8px 0 0 0;
+}
+.word-press-theme-purchase {
+  width: 170px;
+  font-family: Raleway;
+  background-color: #998675;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+.word-press-theme-purchase:active {
+  background-color: #ffffff;
+  color: #998675;
 }
