@@ -283,7 +283,6 @@ body {
 }
 .pform-radio {
   display: none;
-  box-sizing: border-box;
 }
 .pform-radio + .pform-label::before {
   content: '';
