@@ -1,0 +1,191 @@
+//out: false
+
+.create-header-arrow() {
+    color: white;
+    font-size: 75px;
+    width: 40px;
+    height: 73px;
+    opacity: 0.5;
+    text-decoration: none;
+
+    &:hover {
+        opacity: 1;
+        color: #d3c1ad;
+    }
+}
+
+.header {
+    background-image: url(../img/bg_photo_11949.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &-nav {
+        margin: 40px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-company {
+            font-family: Raleway;
+            font-size: 34px;
+            line-height: 1.2;
+            font-weight: 400;
+            letter-spacing: -0.04em;
+            color: #ffffff;
+            margin: 0 220px 0 0;
+            display: flex;
+            align-items: center;
+        }
+
+        &-pages {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            &-li {
+                margin: 0 30px 0 0;
+            }
+
+            &>:nth-child(8),
+            &>:last-child {
+                margin: 0;
+            }
+
+            &>:nth-child(9) {
+                margin: 0 28px 0 64px;
+            }
+        }
+
+        &-page {
+            text-decoration: none;
+            font-family: Montserrat;
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 300;
+            color: #ffffff;
+
+            &-selected {
+                color: #c7b299;
+            }
+        }
+
+        &-magazine {
+            display: block;
+            width: 18px;
+            height: 24px;
+            font-size: 25px;
+        }
+
+        &-search {
+            display: block;
+            width: 24px;
+            height: 24px;
+            font-size: 25px;
+        }
+    }
+
+    &-center {
+        margin: 0 0 0 0;
+        padding: 0 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        box-sizing: border-box;
+
+        &-prev {
+            .create-header-arrow();
+        }
+
+        &-next {
+            .create-header-arrow();
+        }
+
+        &-template {
+            width: 590px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &-subheader {
+                font-family: Raleway;
+                font-size: 36px;
+                line-height: 1.2;
+                font-weight: 500;
+                color: #ffffff;
+            }
+
+            &-header {
+                font-family: Raleway;
+                font-size: 52px;
+                line-height: 1.2;
+                font-weight: 800;
+                color: #ffffff;
+                margin: 14px 0 20px 0;
+            }
+
+            &-info {
+                white-space: pre-wrap;
+                word-wrap: break-word;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 300;
+                color: #ffffff;
+                margin: 0 0 52px 0;
+            }
+
+            &-get-started {
+                .create-button();
+            }
+        }
+    }
+
+    &-south {
+        margin: 0 0 42px 0;
+
+        &-player {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style-type: none;
+
+            &-li {
+                margin: 0 10px 0 0;
+            }
+
+            &>:last-child {
+                margin: 0;
+            }
+
+            &-item {
+                display: none;
+
+
+                &+label {
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: white;
+                    opacity: 0.5;
+                    box-sizing: border-box;
+                }
+
+                &:checked+label {
+                    background-color: transparent;
+                    box-shadow: 0 0 0 2px white;
+                }
+            }
+        }
+    }
+}

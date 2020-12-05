@@ -1,0 +1,30 @@
+//out: false
+
+.create-section-title(@color: white, @weight: 600) {
+    font-family: Raleway;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: @weight;
+    color: @color;
+}
+
+.create-button() {
+    width: 170px;
+    font-family: Raleway;
+    background-color: #998675;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+
+    &:active {
+        background-color: #ffffff;
+        color: #998675;
+    }
+}
