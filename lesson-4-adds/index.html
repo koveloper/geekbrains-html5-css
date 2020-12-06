@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="content">
+        <video class="background-video" src="video/video.mp4" width="100" height="100" muted autoplay loop></video>
+        <div class="timeline">
+            <div class="timeline-sample-wrapper sample-1">
+                <div class="timeline-sample with-date">1984</div>
+                <div class="timeline-event">12, JANUARY - BORN</div>
+            </div>
+            <div class="timeline-sample-wrapper sample-2">
+                <div class="timeline-sample with-date">1988</div>
+                <div class="timeline-event">SCHOOL</div>
+            </div>
+            <div class="timeline-sample-wrapper sample-3">
+                <div class="timeline-sample with-date">1999</div>
+                <div class="timeline-event">COLLEGE</div>
+            </div>
+            <div class="timeline-sample-wrapper sample-4">
+                <div class="timeline-sample"></div>
+                <div class="timeline-event">FELL IN LOVE</div>
+            </div>
+            <div class="timeline-sample-wrapper sample-5">
+                <div class="timeline-sample with-date">2004</div>
+                <div class="timeline-event">eACCP</div>
+            </div>
+            <div class="timeline-sample-wrapper sample-6">
+                <div class="timeline-sample with-date">2006</div>
+                <div class="timeline-event">INTERNSHIP</div>
+            </div>
+            <div class="timeline-sample-wrapper sample-7">
+                <div class="timeline-sample"></div>
+                <div class="timeline-event">ALL PAKISTAN<wbr>POSTER COMPETITION<wbr>WINNER</div>
+            </div>
+            <div class="timeline-sample-wrapper sample-8">
+                <div class="timeline-sample with-date">2011</div>
+                <div class="timeline-event">MASTERS IN MULTIMEDIA</div>
+            </div>
+            <div class="timeline-direction"></div>
+        </div>
+        <form class="pform">
+            <div class="pform-type pform-controls-wrapper">
+                <div class="pform-control">
+                    <input class="pform-radio" type="radio" name="type" id="interier">
+                    <label class="pform-label pform-radio-plus" for="interier">Аксессуар для интерьера</label>
+                </div>
+                <div class="pform-control">
+                    <input class="pform-radio" type="radio" name="type" id="play">
+                    <label class="pform-label" for="play">Детская игрушка</label>
+                </div>
+            </div>
+            <div class="pform-color pform-controls-wrapper">
+                <div class="color-row">
+                    <div class="pform-control">
+                        <input class="pform-checkbox" type="checkbox" name="white" id="white">
+                        <label class="pform-label" for="white">Белый</label>
+                    </div>
+                    <div class="pform-control">
+                        <input class="pform-checkbox" type="checkbox" name="gray" id="gray">
+                        <label class="pform-label" for="gray">Серый</label>
+                    </div>
+                    <div class="pform-control">
+                        <input class="pform-checkbox" type="checkbox" name="tiffany" id="tiffany">
+                        <label class="pform-label" for="tiffany">"Тиффани"</label>
+                    </div>
+                </div>
+                <div class="color-row">
+                    <div class="pform-control">
+                        <input class="pform-checkbox" type="checkbox" name="black" id="black">
+                        <label class="pform-label" for="black">Чёрный</label>
+                    </div>
+                    <div class="pform-control">
+                        <input class="pform-checkbox" type="checkbox" name="pink" id="pink">
+                        <label class="pform-label" for="pink">Розовый</label>
+                    </div>
+                    <div class="pform-control">
+                        <input class="pform-checkbox" type="checkbox" name="orange" id="orange">
+                        <label class="pform-label" for="orange">Оранжевый</label>
+                    </div>
+                </div>
+            </div>
+            <div class="pform-fio pform-controls-wrapper">
+                <div class="pform-control limited">
+                    <label class="pform-label">Фамилия:
+                    <input class="pform-text" type="text" name="first-name" id="first-name" placeholder="Укажите фамилию">                        
+                </label>
+                </div>
+                <div class="pform-control limited">
+                    <label class="pform-label">Имя:
+                    <input class="pform-text" type="text" name="second-name" id="second-name" placeholder="Укажите ваше имя">                        
+                </label>
+                </div>
+                <div class="pform-control limited">
+                    <label class="pform-label">Отчество:
+                    <input class="pform-text" type="text" name="last-name" id="last-name" placeholder="Отчество, если желаете">                        
+                </label>
+                </div>
+            </div>
+            <div class="pform-contacts pform-controls-wrapper">
+                <div class="pform-control limited">
+                    <label class="pform-label">
+                    <input class="pform-text pform-contact" type="tel" name="phone" id="phone" placeholder="+7 XXX XX XX">
+                </label>
+                </div>
+                <div class="pform-control limited">
+                    <label class="pform-label">
+                    <input class="pform-text pform-contact" type="email" name="email" id="email" placeholder="Мы не будем спамить, честно!">
+                </label>
+                </div>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>

@@ -392,6 +392,7 @@ body {
   border-radius: 8px;
   width: 500px;
   box-sizing: border-box;
+  text-transform: capitalize;
 }
 .contacts-message-user-email {
   background-color: white;
