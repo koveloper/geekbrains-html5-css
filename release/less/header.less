@@ -1,17 +1,10 @@
 //out: false
 
 .create-header-arrow() {
-    color: white;
-    font-size: 75px;
-    width: 40px;
-    height: 73px;
-    opacity: 0.5;
     text-decoration: none;
-
-    &:hover {
-        opacity: 1;
-        color: #d3c1ad;
-    }
+    font-size: 75px;
+    opacity: 0.5;
+    #labels.light();
 }
 
 .header {
@@ -29,17 +22,33 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        justify-self: flex-start;
+        order: 1;
 
-        &-company {
-            font-family: Raleway;
+        &-logo {
+            font-family: @font-family-base;
             font-size: 34px;
             line-height: 1.2;
             font-weight: 400;
             letter-spacing: -0.04em;
-            color: #ffffff;
             margin: 0 220px 0 0;
             display: flex;
             align-items: center;
+            text-decoration: none;
+            #labels.light();
+
+            &-svg {
+                fill: @light-color;
+                transition: @default-transition;
+            }
+
+            &:hover &-svg {
+                fill: @light-hover-color;
+            }
+
+            &:active &-svg {
+                fill: @light-active-color;
+            }
         }
 
         &-pages {
@@ -66,15 +75,11 @@
 
         &-page {
             text-decoration: none;
-            font-family: Montserrat;
+            font-family: @font-family-secondary;
             font-size: 14px;
             line-height: 1.2;
             font-weight: 300;
-            color: #ffffff;
-
-            &-selected {
-                color: #c7b299;
-            }
+            #labels.light();
         }
 
         &-magazine {
@@ -92,14 +97,56 @@
         }
     }
 
-    &-center {
-        margin: 0 0 0 0;
+    &-dots {
+        order: 3;
+        display: flex;
+        margin-bottom: 42px;
+
+        &-item {
+            margin: 0 10px 0 0;
+            transition: @default-transition;
+
+            &:hover::after {
+                opacity: 0.9;
+            }
+
+            &:active::after {
+                opacity: 0.9;
+                background-color: @light-active-color;
+            }
+
+            &::after {
+                content: '';
+                transition: @default-transition;
+                display: block;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: @light-color;
+                opacity: 0.5;
+                box-sizing: border-box;
+            }
+
+            &-selected::after {
+                background-color: transparent !important;
+                box-shadow: 0 0 0 2px @light-color;
+            }
+        }
+
+        &>:last-child {
+            margin: 0;
+        }
+    }
+
+    &-switcher {
         padding: 0 150px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
         box-sizing: border-box;
+        justify-self: flex-end;
+        order: 2;
 
         &-prev {
             .create-header-arrow();
@@ -109,26 +156,33 @@
             .create-header-arrow();
         }
 
-        &-template {
-            width: 590px;
+        &-items {
             display: flex;
+            flex-direction: row;
+            max-width: 590px;
+            overflow: hidden;
+        }
+
+        &-item {
+            display: flex;
+            min-width: 100%;
             flex-direction: column;
             align-items: center;
 
             &-subheader {
-                font-family: Raleway;
+                font-family: @font-family-base;
                 font-size: 36px;
                 line-height: 1.2;
                 font-weight: 500;
-                color: #ffffff;
+                color: @light-color;
             }
 
             &-header {
-                font-family: Raleway;
+                font-family: @font-family-base;
                 font-size: 52px;
-                line-height: 1.2;
+                line-height: 1;
                 font-weight: 800;
-                color: #ffffff;
+                color: @light-color;
                 margin: 14px 0 20px 0;
             }
 
@@ -136,55 +190,16 @@
                 white-space: pre-wrap;
                 word-wrap: break-word;
                 text-align: center;
-                font-family: Montserrat;
+                font-family: @font-family-secondary;
                 font-size: 16px;
                 line-height: 24px;
                 font-weight: 300;
-                color: #ffffff;
+                color: @light-color;
                 margin: 0 0 52px 0;
             }
 
-            &-get-started {
+            &-button {
                 .create-button();
-            }
-        }
-    }
-
-    &-south {
-        margin: 0 0 42px 0;
-
-        &-player {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            list-style-type: none;
-
-            &-li {
-                margin: 0 10px 0 0;
-            }
-
-            &>:last-child {
-                margin: 0;
-            }
-
-            &-item {
-                display: none;
-
-
-                &+label {
-                    display: block;
-                    width: 10px;
-                    height: 10px;
-                    border-radius: 50%;
-                    background-color: white;
-                    opacity: 0.5;
-                    box-sizing: border-box;
-                }
-
-                &:checked+label {
-                    background-color: transparent;
-                    box-shadow: 0 0 0 2px white;
-                }
             }
         }
     }
