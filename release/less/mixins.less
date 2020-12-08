@@ -1,4 +1,53 @@
 //out: false
+@default-transition: 0.3s;
+@font-family-base: Raleway;
+@font-family-secondary: Montserrat;
+@font-family-icons: 'geekbrains-icons';
+
+@light-color: #fff;
+@light-hover-color: #c7b299;
+@light-active-color: #998675;
+
+@dark-element-hover-color: #c7b299;
+
+#labels {
+    .create-interactive(@color, @hover-color, @active-color) {
+        color: @color;
+        transition: @default-transition;
+
+        &:hover {
+            color: @hover-color;
+        }
+
+        &:active {
+            color: @active-color;
+        }
+    }
+
+    .light() {
+        .create-interactive(@light-color, @light-hover-color, @light-active-color);
+    }
+}
+
+#svg {
+    .create-interactive(@color, @hover-color, @active-color) {
+        fill: @color;
+        transition: @default-transition;
+
+        &:hover {
+            color: @hover-color;
+        }
+
+        &:active {
+            color: @active-color;
+        }
+    }
+
+    .light() {
+        .create-interactive(@light-color, @light-hover-color, @light-active-color);
+    }
+}
+
 
 .create-section-title(@color: white, @weight: 600) {
     font-family: Raleway;
@@ -6,6 +55,19 @@
     line-height: 1.2;
     font-weight: @weight;
     color: @color;
+}
+
+.create-standart-button-interactive() {
+    &:hover {
+        background-color: #fff;
+        color: #736357;
+        border: 1px solid #736357;
+    }
+
+    &:active {
+        background-color: #736357;
+        color: #fff;
+    }
 }
 
 .create-button() {
@@ -22,9 +84,7 @@
     box-sizing: border-box;
     outline: none;
     border: none;
-
-    &:active {
-        background-color: #ffffff;
-        color: #998675;
-    }
+    transition: @default-transition;
+    border: 1px solid transparent;
+    .create-standart-button-interactive();
 }

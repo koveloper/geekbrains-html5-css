@@ -1,0 +1,86 @@
+//out: false
+
+.advertisement {
+    margin: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 270px;
+        margin: 0 34px 0 0;
+        user-select: none;
+        cursor: pointer;
+        transition: @default-transition;
+
+        &-title {
+            font-size: 22px;
+            line-height: 1.2;
+            font-weight: 600;
+            color: #555555;
+            padding: 0;
+            margin: 30px 0 20px 0;
+        }
+
+        &-info {
+            font-family: @font-family-secondary;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 300;
+            color: #8c8c8c;
+            text-align: center;
+        }
+
+        &::before {
+            content: "";
+            transition: @default-transition;
+            color: #555555;
+            font-family: @font-family-icons;
+            display: block;
+            width: 49px;
+            height: 49px;
+            font-size: 45px;
+        }
+
+        &:after {
+            content: '';
+            transition: @default-transition;
+            margin: 30px 0 0 0;
+            width: 70px;
+            height: 3px;
+            background-color: #f1eee9;
+        }
+
+        &:hover::before {
+            color: @dark-element-hover-color;
+        }
+
+        &:hover::after {
+            background-color: @dark-element-hover-color;
+        }
+    }
+
+    &>:last-child {
+        margin: 0;
+    }
+
+    &>:nth-child(1)::before {
+        content: "\e900";
+    }
+
+    &>:nth-child(2)::before {
+        content: "\e901";
+    }
+
+    &>:nth-child(3)::before {
+        content: "\e902";
+    }
+
+    &>:nth-child(4)::before {
+        content: "\e903";
+    }
+}
