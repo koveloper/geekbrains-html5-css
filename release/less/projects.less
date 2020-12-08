@@ -46,10 +46,15 @@
             font-weight: 300;
             color: #8c8c8c;
             transition: @default-transition;
+
+            &:hover {
+                border: 1px solid #998675;
+                background-color: #fbfaf8;
+            }
         }
 
         &-button:checked+label {
-            border: 1px solid transparent;
+            border: 1px solid transparent !important;
             background-color: #998675;
             color: white;
         }
@@ -99,6 +104,7 @@
 
                 &::before {
                     content: '';
+                    transition: @default-transition;
                     width: 0;
                     height: 0;
                     border-left: (@project-card-triangle-width / 2) solid transparent;

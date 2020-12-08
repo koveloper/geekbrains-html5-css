@@ -514,8 +514,12 @@ body {
   color: #8c8c8c;
   transition: 0.3s;
 }
+.projects-classes-label:hover {
+  border: 1px solid #998675;
+  background-color: #fbfaf8;
+}
 .projects-classes-button:checked + label {
-  border: 1px solid transparent;
+  border: 1px solid transparent !important;
   background-color: #998675;
   color: white;
 }
@@ -559,6 +563,7 @@ body {
 }
 .projects-cards-item-footer::before {
   content: '';
+  transition: 0.3s;
   width: 0;
   height: 0;
   border-left: 15px solid transparent;
