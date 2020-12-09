@@ -794,3 +794,140 @@ body {
 .for-mobile-summary::-webkit-details-marker {
   display: none;
 }
+.our-results {
+  background-color: #f4f5f8;
+  background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+  padding: 70px 500px 60px 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our-results-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+.our-results-button-limits {
+  position: absolute;
+  opacity: 0;
+  transition: 0.3s;
+  stroke-width: 3;
+}
+.our-results-button:hover > .our-results-button-limits {
+  opacity: 1;
+  stroke: white;
+}
+.our-results-button:active > .our-results-button-limits {
+  opacity: 1;
+  stroke: #c7b299;
+}
+.our-results-button:active {
+  opacity: 0.3;
+}
+.our-results-button-number {
+  transition: 0.3s;
+  font-family: Montserrat;
+  font-size: 48px;
+  line-height: 36px;
+  font-weight: 200;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+}
+.our-results-button-title {
+  transition: 0.3s;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  align-items: center;
+  text-transform: uppercase;
+  color: #c7b299;
+}
+.our-results-button:nth-child(1)::before {
+  content: "\e904";
+  transition: 0.3s;
+  font-family: 'geekbrains-icons';
+  font-size: 44px;
+  color: #c7b299;
+  margin: 0 0 30px 0;
+}
+.our-results-button:nth-child(2)::before {
+  content: "\e905";
+  transition: 0.3s;
+  font-family: 'geekbrains-icons';
+  font-size: 44px;
+  color: #c7b299;
+  margin: 0 0 30px 0;
+}
+.our-results-button:nth-child(3)::before {
+  content: "\e906";
+  transition: 0.3s;
+  font-family: 'geekbrains-icons';
+  font-size: 44px;
+  color: #c7b299;
+  margin: 0 0 30px 0;
+}
+.our-results-button:nth-child(4)::before {
+  content: "\e907";
+  transition: 0.3s;
+  font-family: 'geekbrains-icons';
+  font-size: 44px;
+  color: #c7b299;
+  margin: 0 0 30px 0;
+}
+.our-results-button:nth-child(5)::before {
+  content: "\e908";
+  transition: 0.3s;
+  font-family: 'geekbrains-icons';
+  font-size: 44px;
+  color: #c7b299;
+  margin: 0 0 30px 0;
+}
+.our-results-button:nth-child(1)::after {
+  content: "";
+  transition: 0.3s;
+  margin: 30px 0 0 0;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+}
+.our-results-button:nth-child(2)::after {
+  content: "";
+  transition: 0.3s;
+  margin: 30px 0 0 0;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+}
+.our-results-button:nth-child(3)::after {
+  content: "";
+  transition: 0.3s;
+  margin: 30px 0 0 0;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+}
+.our-results-button:nth-child(4)::after {
+  content: "";
+  transition: 0.3s;
+  margin: 30px 0 0 0;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+}
+.our-results-button:nth-child(5)::after {
+  content: "";
+  transition: 0.3s;
+  margin: 30px 0 0 0;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+}
