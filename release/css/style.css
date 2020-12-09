@@ -712,3 +712,85 @@ body {
 .presentation-video {
   position: absolute;
 }
+.for-mobile {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #fbfaf8;
+  padding: 80px 0 0 0;
+}
+.for-mobile-image {
+  align-self: flex-end;
+}
+.for-mobile-description {
+  max-width: 660px;
+  margin: 116px 0 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.for-mobile-title {
+  font-family: Raleway;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+  margin: 0 0 40px 0;
+}
+.for-mobile-text {
+  margin: 0 0 45px 0;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #8c8c8c;
+}
+.for-mobile-details-block {
+  margin: 0 0 0 50px;
+}
+.for-mobile-detail {
+  font-family: Montserrat;
+  font-size: 16px;
+  margin: 0 0 12px 0;
+  font-weight: 300;
+  font-style: italic;
+  color: black;
+  outline: none;
+  transition: 0.3s;
+}
+.for-mobile-detail-inner {
+  transition: 0.3s;
+  margin: 8px 0 0 48px;
+  display: block;
+  border: none;
+  opacity: 0;
+  padding: 0 0 0 8px;
+}
+.for-mobile-detail[open] > summary::before {
+  transform: rotate(90deg);
+}
+.for-mobile-detail[open] > .for-mobile-detail-inner {
+  opacity: 1;
+  border-left: 1px solid #8c8c8c;
+}
+.for-mobile-summary {
+  outline: none;
+  font-style: normal;
+  color: #8c8c8c;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: 0.3s;
+}
+.for-mobile-summary::before {
+  content: "\e911";
+  font-family: 'geekbrains-icons';
+  transition: 0.3s;
+  display: block;
+  margin: 0 30px 0 0;
+  color: #c7b299;
+}
+.for-mobile-summary::-webkit-details-marker {
+  display: none;
+}

@@ -87,3 +87,7 @@
 .icon-right:before {
   content: "\e910";
 }
+
+.icon-arr-right:before {
+  content: "\e911";
+}
