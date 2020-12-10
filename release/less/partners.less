@@ -1,0 +1,28 @@
+.partners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/partners_bck.jpg), linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background-blend-mode: darken;
+    background-size: cover;
+    padding: 140px 0;
+    position: relative;
+    transition: @default-transition;
+
+    &-link {
+        margin: 0 90px 0 0;
+        transition: @default-transition;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:active {
+            opacity: 0.9;
+        }
+    }
+}

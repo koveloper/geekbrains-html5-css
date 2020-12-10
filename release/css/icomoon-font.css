@@ -91,3 +91,11 @@
 .icon-arr-right:before {
   content: "\e911";
 }
+
+.icon-left_circle:before {
+  content: "\e912";
+}
+
+.icon-right_circle:before {
+  content: "\e913";
+}
