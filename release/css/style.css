@@ -1453,7 +1453,6 @@ body {
 }
 .summary {
   background-color: #191919;
-  padding: 0 0 80px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1463,10 +1462,23 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 375px 80px 375px;
+  padding: 0 0 80px 0;
+}
+.summary-wrapper {
+  max-width: 1170px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .summary-company {
-  width: 25%;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin: 80px 30px 0 0;
 }
 .summary-company-logo {
@@ -1543,7 +1555,10 @@ body {
   border-left: 6px solid #998675;
 }
 .summary-posts {
-  width: 25%;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin: 108px 30px 0 0;
 }
 .summary-posts-title {
@@ -1604,7 +1619,10 @@ body {
   margin: 0 0 0 0;
 }
 .summary-twitter {
-  width: 25%;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin: 108px 30px 0 0;
 }
 .summary-twitter-title {
@@ -1669,7 +1687,10 @@ body {
   text-decoration: none;
 }
 .summary-dribbble {
-  width: 25%;
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin: 108px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1679,6 +1700,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 .summary-dribbble-title {
   font-size: 24px;
@@ -1711,11 +1737,70 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #111111;
-  padding: 45px 375px 52px 375px;
+  padding: 45px 0 52px 0;
+}
+.support-wrapper {
+  max-width: 1170px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.support-block-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.support-block-1 > :nth-child(1) {
+  color: #959595;
+  padding: 0 8px 0 0;
+}
+.support-block-1 > :nth-child(1)::before {
+  content: "Copyright © 2015";
+  color: #555555;
+  margin: 0 4px 0 0;
+}
+.support-block-1 > :nth-child(3) {
+  color: #c7b299;
+}
+.support-block-1 > :last-child {
+  padding: 0 0 0 8px;
+  border: none;
+}
+.support-block-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0 0 0 auto;
+}
+.support-block-2 > :nth-child(1) {
+  color: #959595;
+  padding: 0 8px 0 0;
+}
+.support-block-2 > :nth-child(1)::before {
+  content: "Designed by";
+  color: #555555;
+  margin: 0 4px 0 0;
+}
+.support-block-2 > :nth-child(2) {
+  color: #959595;
+  padding: 0 0 0 8px;
+  border: none;
+}
+.support-block-2 > :nth-child(2)::before {
+  content: "Only on";
+  color: #555555;
+  margin: 0 4px 0 0;
 }
 .support-link {
   font-family: Montserrat;
@@ -1734,40 +1819,4 @@ body {
 }
 .support-link:active {
   color: #998675 !important;
-}
-.support-link:nth-child(1) {
-  color: #959595;
-  padding: 0 8px 0 0;
-}
-.support-link:nth-child(1)::before {
-  content: "Copyright © 2015";
-  color: #555555;
-  margin: 0 4px 0 0;
-}
-.support-link:nth-child(3) {
-  color: #c7b299;
-}
-.support-link:nth-child(4) {
-  padding: 0 0 0 8px;
-  border: none;
-}
-.support-link:nth-child(5) {
-  color: #959595;
-  padding: 0 8px 0 0;
-  margin: 0 0 0 auto;
-}
-.support-link:nth-child(5)::before {
-  content: "Designed by";
-  color: #555555;
-  margin: 0 4px 0 0;
-}
-.support-link:nth-child(6) {
-  color: #959595;
-  padding: 0 0 0 8px;
-  border: none;
-}
-.support-link:nth-child(6)::before {
-  content: "Only on";
-  color: #555555;
-  margin: 0 4px 0 0;
 }
