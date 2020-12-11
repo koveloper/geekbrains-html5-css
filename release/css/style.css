@@ -967,10 +967,12 @@ body {
 .for-mobile-image {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  margin: 0 0 0 40px;
 }
 .for-mobile-description {
   max-width: 660px;
-  margin: 116px 0 0 30px;
+  margin: 108px 0 0 0;
+  padding: 0 0 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -991,15 +993,16 @@ body {
   line-height: 1.2;
   font-weight: 600;
   color: #555555;
-  margin: 0 0 40px 0;
+  margin: 0 0 24px 0;
 }
 .for-mobile-text {
-  margin: 0 0 45px 0;
+  margin: 0 0 35px 0;
   font-family: Montserrat;
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
   color: #8c8c8c;
+  letter-spacing: -0.01em;
 }
 .for-mobile-details-block {
   margin: 0 0 0 50px;
@@ -1007,7 +1010,7 @@ body {
 .for-mobile-detail {
   font-family: Montserrat;
   font-size: 16px;
-  margin: 0 0 12px 0;
+  margin: 0 0 9px 0;
   font-weight: 300;
   font-style: italic;
   color: black;
@@ -1056,6 +1059,7 @@ body {
   display: block;
   margin: 0 30px 0 0;
   color: #c7b299;
+  font-size: 21px;
 }
 .for-mobile-summary::-webkit-details-marker {
   display: none;
