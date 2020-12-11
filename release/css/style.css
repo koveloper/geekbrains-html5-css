@@ -90,21 +90,23 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .header-nav {
-  margin: 40px 0 0 0;
+  max-width: 1172px;
+  width: 100%;
+  margin: 38px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   justify-self: flex-start;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -115,8 +117,8 @@ body {
   font-size: 34px;
   line-height: 1.2;
   font-weight: 400;
-  letter-spacing: -0.04em;
-  margin: 0 220px 0 0;
+  letter-spacing: -0.01em;
+  margin: 0 auto 0 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,14 +163,23 @@ body {
           align-items: center;
 }
 .header-nav-pages-li {
-  margin: 0 30px 0 0;
+  margin: 0 28px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .header-nav-pages > :nth-child(8),
 .header-nav-pages > :last-child {
   margin: 0;
 }
 .header-nav-pages > :nth-child(9) {
-  margin: 0 28px 0 64px;
+  margin: 0 26px 0 60px;
 }
 .header-nav-page {
   text-decoration: none;
@@ -187,10 +198,18 @@ body {
   color: #998675;
 }
 .header-nav-magazine {
-  display: block;
-  width: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24px;
   height: 24px;
-  font-size: 25px;
+  font-size: 28px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0;
   margin: 0;
   border: none;
@@ -199,10 +218,18 @@ body {
   cursor: pointer;
 }
 .header-nav-search {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 24px;
   height: 24px;
-  font-size: 25px;
+  font-size: 28px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .header-dots {
   -webkit-box-ordinal-group: 4;
@@ -211,7 +238,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 42px;
+  margin: auto 0 42px 0;
 }
 .header-dots-item {
   margin: 0 10px 0 0;
@@ -248,6 +275,7 @@ body {
 }
 .header-switcher {
   padding: 0 150px;
+  margin: 276px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,7 +329,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  max-width: 590px;
+  max-width: 594px;
   overflow: hidden;
 }
 .header-switcher-item {
@@ -330,9 +358,10 @@ body {
   line-height: 1;
   font-weight: 800;
   color: #fff;
-  margin: 14px 0 20px 0;
+  margin: 9px 0 19px 0;
 }
 .header-switcher-item-info {
+  max-width: 95%;
   white-space: pre-wrap;
   word-wrap: break-word;
   text-align: center;
@@ -341,7 +370,7 @@ body {
   line-height: 24px;
   font-weight: 300;
   color: #fff;
-  margin: 0 0 52px 0;
+  margin: 0 0 48px 0;
 }
 .header-switcher-item-button {
   width: 170px;
@@ -353,7 +382,7 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 20px;
+  padding: 14px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none;
@@ -583,7 +612,7 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 20px;
+  padding: 14px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none;
@@ -792,7 +821,7 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 20px;
+  padding: 14px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none;
@@ -1465,7 +1494,7 @@ body {
   padding: 0 0 80px 0;
 }
 .summary-wrapper {
-  max-width: 1170px;
+  max-width: 1172px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1744,7 +1773,7 @@ body {
   padding: 45px 0 52px 0;
 }
 .support-wrapper {
-  max-width: 1170px;
+  max-width: 1172px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
