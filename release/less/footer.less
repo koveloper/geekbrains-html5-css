@@ -26,7 +26,7 @@
     &-company {
         width: 100%;
         flex-grow: 1;
-        margin: 80px @between-blocks 0 0;
+        margin: 69px @between-blocks 0 0;
 
         &-logo {
             font-size: 34px;
@@ -37,24 +37,27 @@
             align-items: center;
             margin: 0;
             padding: 0;
+            letter-spacing: 0;
+
 
             &:before {
                 font-family: @font-family-icons;
                 content: "\e90e";
-                font-size: 64px;
+                font-size: 60px;
             }
         }
 
         &-info {
             font-family: @font-family-secondary;
             font-size: 14px;
-            line-height: 24px;
+            line-height: 25px;
             font-weight: 300;
             color: #555555;
             word-wrap: break-word;
             word-break: break-all;
-            margin: 30px 0;
+            margin: 18px 0 20px 0;
             transition: @default-transition;
+            letter-spacing: 0.05em;
 
             &:hover {
                 color: white;
@@ -107,7 +110,7 @@
         font-size: 24px;
         font-weight: 700;
         color: #ffffff;
-        margin: 0 0 30px 0;
+        margin: 0 0 23px 0;
         padding: 0;
     }
 
@@ -138,22 +141,23 @@
     .add-default-sizes(@right-margin: @between-blocks) {
         width: 100%;
         flex-grow: 1;
-        margin: 108px @right-margin 0 0;
+        margin: 100px @right-margin 0 0;
     }
 
-    .msg-view(@flex-direction: column, @date-margin: 10px, @text-margin: 0) {
+    .msg-view(@flex-direction: column, @date-margin: 3px, @text-margin: 0) {
         border-bottom: 2px solid #252525;
         display: flex;
         flex-direction: @flex-direction;
-        padding: 20px 0;
+        @default-padding: 16px;
+        padding: @default-padding 0;
 
         &:nth-child(2) {
-            padding: 0 0 20px 0;
+            padding: 0 0 @default-padding 0;
         }
 
         &:last-child {
             border-bottom: none;
-            padding: 20px 0 0 0;
+            padding: @default-padding 0 0 0;
         }
 
         &:hover>&-date {
@@ -196,7 +200,7 @@
         }
 
         &-message {
-            .msg-view(column-reverse, 0, 10px);
+            .msg-view(column-reverse, 0, 3px);
         }
     }
 
@@ -223,11 +227,11 @@
             transition: @default-transition;
 
             &:nth-last-child(2) {
-                margin: 10px 0 0 0;
+                margin: 12px 0 0 0;
             }
 
             &:last-child {
-                margin: 10px 0 0 0;
+                margin: 12px 0 0 0;
             }
 
             &:hover {
@@ -245,8 +249,8 @@
     display: flex;
     justify-content: center;
     background-color: #111111;
-    padding: 45px 0 52px 0;
-    @padding: 8px;
+    padding: 39px 0 52px 0;
+    @padding: 12px;
     @before-margin: 4px;
 
     &-wrapper {
