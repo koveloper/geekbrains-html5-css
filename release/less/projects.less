@@ -13,7 +13,7 @@
     &-title {
         .create-section-title(#555555);
         padding: 0;
-        margin: 80px 0 24px 0;
+        margin: 76px 0 15px 0;
     }
 
     &-info {
@@ -22,9 +22,9 @@
         line-height: 28px;
         font-weight: 300;
         color: #8c8c8c;
-        width: 760px;
+        max-width: 776px;
         text-align: center;
-        margin: 0 0 40px 0;
+        margin: 0 0 34px 0;
     }
 
     &-classes {
@@ -36,7 +36,11 @@
         }
 
         &-label {
-            padding: 10px 21px;
+            min-width: 25px;
+            padding: 5px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border: 1px solid #ebebeb;
             border-radius: 3px;
             margin: 0 10px 0 0;
@@ -79,14 +83,14 @@
             }
 
             &-footer {
-                padding: 30px 0 28px 28px;
+                padding: 26px 0 26px 29px;
                 background-color: #fbfaf8;
                 position: relative;
                 z-index: 20;
                 transition: @default-transition;
 
                 &-title {
-                    margin: 0 0 14px 0;
+                    margin: 0 0 6px 0;
                     padding: 0;
                     font-size: 20px;
                     line-height: 1.2;
@@ -112,6 +116,7 @@
                     border-bottom: @project-card-triangle-height solid #fbfaf8;
                     position: absolute;
                     top: -@project-card-triangle-height;
+                    left: 20px;
                 }
             }
 
@@ -168,6 +173,6 @@
 
     &-more {
         .create-button();
-        margin: 25px 0 80px 0;
+        margin: 21px 0 80px 0;
     }
 }

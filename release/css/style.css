@@ -674,7 +674,7 @@ body {
   font-weight: 600;
   color: #555555;
   padding: 0;
-  margin: 80px 0 24px 0;
+  margin: 76px 0 15px 0;
 }
 .projects-info {
   font-family: Montserrat;
@@ -682,9 +682,9 @@ body {
   line-height: 28px;
   font-weight: 300;
   color: #8c8c8c;
-  width: 760px;
+  max-width: 776px;
   text-align: center;
-  margin: 0 0 40px 0;
+  margin: 0 0 34px 0;
 }
 .projects-classes {
   display: -webkit-box;
@@ -696,7 +696,17 @@ body {
   display: none;
 }
 .projects-classes-label {
-  padding: 10px 21px;
+  min-width: 25px;
+  padding: 5px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px solid #ebebeb;
   border-radius: 3px;
   margin: 0 10px 0 0;
@@ -743,7 +753,7 @@ body {
   transition: 0.3s;
 }
 .projects-cards-item-footer {
-  padding: 30px 0 28px 28px;
+  padding: 26px 0 26px 29px;
   background-color: #fbfaf8;
   position: relative;
   z-index: 20;
@@ -751,7 +761,7 @@ body {
   transition: 0.3s;
 }
 .projects-cards-item-footer-title {
-  margin: 0 0 14px 0;
+  margin: 0 0 6px 0;
   padding: 0;
   font-size: 20px;
   line-height: 1.2;
@@ -776,6 +786,7 @@ body {
   border-bottom: 10px solid #fbfaf8;
   position: absolute;
   top: -10px;
+  left: 20px;
 }
 .projects-cards-item-link {
   color: #fff;
@@ -852,7 +863,7 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border: 1px solid transparent;
-  margin: 25px 0 80px 0;
+  margin: 21px 0 80px 0;
 }
 .projects-more:hover {
   background-color: #fff;
