@@ -1017,6 +1017,7 @@ body {
   outline: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  letter-spacing: -0.01em;
 }
 .for-mobile-detail-inner {
   -webkit-transition: 0.3s;
@@ -1050,6 +1051,7 @@ body {
           justify-content: flex-start;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  letter-spacing: -0.01em;
 }
 .for-mobile-summary::before {
   content: "\e911";
@@ -1068,7 +1070,7 @@ body {
   background-color: #f4f5f8;
   background-image: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
   background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
-  padding: 70px 0 60px 0;
+  padding: 60px 0 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1094,7 +1096,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: transparent;
-  width: 180px;
+  max-width: 200px;
+  width: 100%;
   border: none;
   outline: none;
   -webkit-transition: 0.3s;
@@ -1128,7 +1131,7 @@ body {
   line-height: 36px;
   font-weight: 200;
   color: #ffffff;
-  margin: 0 0 20px 0;
+  margin: 0 0 14px 0;
 }
 .our-results-button-title {
   -webkit-transition: 0.3s;
@@ -1150,7 +1153,7 @@ body {
   font-family: 'geekbrains-icons';
   font-size: 44px;
   color: #c7b299;
-  margin: 0 0 30px 0;
+  margin: 0 0 28px 0;
 }
 .our-results-button:nth-child(2)::before {
   content: "\e905";
@@ -1159,7 +1162,7 @@ body {
   font-family: 'geekbrains-icons';
   font-size: 44px;
   color: #c7b299;
-  margin: 0 0 30px 0;
+  margin: 0 0 28px 0;
 }
 .our-results-button:nth-child(3)::before {
   content: "\e906";
@@ -1168,7 +1171,7 @@ body {
   font-family: 'geekbrains-icons';
   font-size: 44px;
   color: #c7b299;
-  margin: 0 0 30px 0;
+  margin: 0 0 28px 0;
 }
 .our-results-button:nth-child(4)::before {
   content: "\e907";
@@ -1177,7 +1180,7 @@ body {
   font-family: 'geekbrains-icons';
   font-size: 44px;
   color: #c7b299;
-  margin: 0 0 30px 0;
+  margin: 0 0 28px 0;
 }
 .our-results-button:nth-child(5)::before {
   content: "\e908";
@@ -1186,13 +1189,13 @@ body {
   font-family: 'geekbrains-icons';
   font-size: 44px;
   color: #c7b299;
-  margin: 0 0 30px 0;
+  margin: 0 0 28px 0;
 }
 .our-results-button:nth-child(1)::after {
   content: "";
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  margin: 30px 0 0 0;
+  margin: 26px 0 0 0;
   width: 30px;
   height: 2px;
   background-color: #ffffff;
@@ -1201,7 +1204,7 @@ body {
   content: "";
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  margin: 30px 0 0 0;
+  margin: 26px 0 0 0;
   width: 30px;
   height: 2px;
   background-color: #ffffff;
@@ -1210,7 +1213,7 @@ body {
   content: "";
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  margin: 30px 0 0 0;
+  margin: 26px 0 0 0;
   width: 30px;
   height: 2px;
   background-color: #ffffff;
@@ -1219,7 +1222,7 @@ body {
   content: "";
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  margin: 30px 0 0 0;
+  margin: 26px 0 0 0;
   width: 30px;
   height: 2px;
   background-color: #ffffff;
@@ -1228,7 +1231,7 @@ body {
   content: "";
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  margin: 30px 0 0 0;
+  margin: 26px 0 0 0;
   width: 30px;
   height: 2px;
   background-color: #ffffff;
