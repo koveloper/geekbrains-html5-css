@@ -1,10 +1,12 @@
 //out: false
 
 .advertisement {
-    margin: 80px;
+    margin: 80px auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    width: 100%;
+    max-width: (@max-active-width - 10px);
+    justify-content: space-between;
 
     &-item {
         display: flex;
@@ -12,10 +14,14 @@
         align-items: center;
         justify-content: center;
         max-width: 270px;
-        margin: 0 34px 0 0;
+        margin: 0 37px 0 0;
         user-select: none;
         cursor: pointer;
         transition: @default-transition;
+
+        &:nth-child(2) {
+            margin: 0 40px 0 0;
+        }
 
         &-title {
             font-size: 22px;
@@ -23,7 +29,7 @@
             font-weight: 600;
             color: #555555;
             padding: 0;
-            margin: 30px 0 20px 0;
+            margin: 25px 0 13px 0;
         }
 
         &-info {
@@ -33,6 +39,8 @@
             font-weight: 300;
             color: #8c8c8c;
             text-align: center;
+            margin: 0;
+            padding: 0;
         }
 
         &::before {
@@ -49,7 +57,7 @@
         &:after {
             content: '';
             transition: @default-transition;
-            margin: 30px 0 0 0;
+            margin: 28px 0 0 0;
             width: 70px;
             height: 3px;
             background-color: #f1eee9;
