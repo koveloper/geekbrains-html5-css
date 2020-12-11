@@ -55,7 +55,8 @@ body {
 }
 .container {
   margin: 0 auto;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -882,6 +883,10 @@ body {
 }
 .presentation-video {
   position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .for-mobile {
   display: -webkit-box;
