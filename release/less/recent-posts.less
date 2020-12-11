@@ -1,6 +1,6 @@
 .recent-posts {
     background: white;
-    padding: 80px 375px;
+    padding: 77px 0 83px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,11 +13,11 @@
         line-height: 1.2;
         font-weight: 600;
         color: #555555;
-        margin: 0 0 30px 0;
+        margin: 0 0 13px 0;
     }
 
     &-info {
-        margin: 0 0 40px 0;
+        margin: 0 0 34px 0;
         max-width: 760px;
         font-family: @font-family-secondary;
         font-size: 16px;
@@ -25,16 +25,19 @@
         font-weight: 300;
         color: #8c8c8c;
         text-align: center;
+        letter-spacing: 0;
     }
 
     &-items {
         display: flex;
+        max-width: @max-active-width;
+        width: 100%;
     }
 
     &-item {
         display: flex;
         flex-direction: column;
-        margin: 0 30px 0 0;
+        margin: 0 29px 0 0;
         position: relative;
         border: 1px solid #f8f8f8;
         transition: @default-transition;
@@ -49,7 +52,7 @@
             z-index: 5;
 
             &-day {
-                padding: 9px 10px;
+                padding: 7px 11px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -64,7 +67,7 @@
             }
 
             &-month {
-                padding: 7px 0;
+                padding: 6px 0;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -79,7 +82,7 @@
         }
 
         &-info {
-            padding: 30px;
+            padding: 26px 28px;
             transition: @default-transition;
             background: transparent;
 
@@ -97,7 +100,8 @@
                 font-size: 14px;
                 font-weight: 300;
                 color: #8c8c8c;
-                margin: 20px 0 30px 0;
+                margin: 17px 0 24px 0;
+                line-height: 1.5;
                 transition: @default-transition;
             }
 

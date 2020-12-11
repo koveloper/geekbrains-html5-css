@@ -1238,7 +1238,7 @@ body {
 }
 .recent-posts {
   background: white;
-  padding: 80px 375px;
+  padding: 77px 0 83px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1261,10 +1261,10 @@ body {
   line-height: 1.2;
   font-weight: 600;
   color: #555555;
-  margin: 0 0 30px 0;
+  margin: 0 0 13px 0;
 }
 .recent-posts-info {
-  margin: 0 0 40px 0;
+  margin: 0 0 34px 0;
   max-width: 760px;
   font-family: Montserrat;
   font-size: 16px;
@@ -1272,11 +1272,14 @@ body {
   font-weight: 300;
   color: #8c8c8c;
   text-align: center;
+  letter-spacing: 0;
 }
 .recent-posts-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1172px;
+  width: 100%;
 }
 .recent-posts-item {
   display: -webkit-box;
@@ -1286,7 +1289,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 30px 0 0;
+  margin: 0 29px 0 0;
   position: relative;
   border: 1px solid #f8f8f8;
   -webkit-transition: 0.3s;
@@ -1308,7 +1311,7 @@ body {
   z-index: 5;
 }
 .recent-posts-item-date-day {
-  padding: 9px 10px;
+  padding: 7px 11px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1329,7 +1332,7 @@ body {
   transition: 0.3s;
 }
 .recent-posts-item-date-month {
-  padding: 7px 0;
+  padding: 6px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1349,7 +1352,7 @@ body {
   transition: 0.3s;
 }
 .recent-posts-item-info {
-  padding: 30px;
+  padding: 26px 28px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background: transparent;
@@ -1368,7 +1371,8 @@ body {
   font-size: 14px;
   font-weight: 300;
   color: #8c8c8c;
-  margin: 20px 0 30px 0;
+  margin: 17px 0 24px 0;
+  line-height: 1.5;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
