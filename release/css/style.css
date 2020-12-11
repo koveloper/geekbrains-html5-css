@@ -190,6 +190,12 @@ body {
   width: 18px;
   height: 24px;
   font-size: 25px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
 }
 .header-nav-search {
   display: block;
