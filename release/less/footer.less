@@ -144,14 +144,13 @@
         transition: @default-transition;
     }
 
-
-
     .msg-view(@flex-direction: column, @date-margin: 3px, @text-margin: 0) {
         border-bottom: 2px solid #252525;
         display: flex;
         flex-direction: @flex-direction;
         @default-padding: 16px;
         padding: @default-padding 0;
+        cursor: pointer;
 
         &:nth-child(2) {
             padding: 0 0 @default-padding 0;
@@ -330,19 +329,5 @@
         &:active {
             color: @light-active-color  !important;
         }
-
-        // &:nth-child(1) {
-        //     color: #959595;
-        //     padding: 0 @padding 0 0;
-        // }
-
-        // &:nth-child(1)::before {
-        //     content: "Copyright © 2015";
-        //     color: #555555;
-        //     margin: 0 @before-margin 0 0;
-        // }
-
-
-
     }
 }

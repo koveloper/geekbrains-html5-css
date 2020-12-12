@@ -15,7 +15,13 @@
         flex-direction: column;
         align-items: center;
         z-index: 10;
-        background-color: rgba(0, 0, 0, 0.5);
+        //background-color: rgba(0, 0, 0, 0.5);
+        background-image: url("../img/bg_photo_10983.jpg");
+        background-blend-mode: darken;
+
+        &-hided {
+            display: none;
+        }
     }
 
     &-play {
@@ -53,6 +59,15 @@
         white-space: pre-wrap;
         word-break: break-all;
         text-align: center;
+    }
+
+    &-timestamp {
+        margin: 28px 0 0 20px;
+        font-family: @font-family-secondary;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #c7b299;
     }
 
     &-video {

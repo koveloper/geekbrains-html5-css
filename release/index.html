@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/icomoon-font.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -39,47 +40,47 @@
             </ul>
         </nav>
         <div class="header-dots">
-            <a href="javascript:void(0)" class="header-dots-item"></a>
-            <a href="javascript:void(0)" class="header-dots-item header-dots-item-selected"></a>
-            <a href="javascript:void(0)" class="header-dots-item"></a>
-            <a href="javascript:void(0)" class="header-dots-item"></a>
-            <a href="javascript:void(0)" class="header-dots-item"></a>
+            <a href="javascript:pageWrapper.header.setCarouselPosition(0)" class="header-dots-item header-dots-item-selected"></a>
+            <a href="javascript:pageWrapper.header.setCarouselPosition(1)" class="header-dots-item"></a>
+            <a href="javascript:pageWrapper.header.setCarouselPosition(2)" class="header-dots-item"></a>
+            <a href="javascript:pageWrapper.header.setCarouselPosition(3)" class="header-dots-item"></a>
+            <a href="javascript:pageWrapper.header.setCarouselPosition(4)" class="header-dots-item"></a>
         </div>
         <div class="header-switcher">
-            <a href="javascript:void(0)" class="header-switcher-prev icon-left"></a>
+            <a href="javascript:pageWrapper.header.setCarouselPosition(-1)" class="header-switcher-prev icon-left"></a>
             <div class="header-switcher-items">
-                <div class="header-switcher-item">
+                <div class="header-switcher-item carousel-position-0">
                     <span class="header-switcher-item-subheader">Unique and Modern Design</span>
                     <h1 class="header-switcher-item-header">Portfolio PSD Template</h1>
                     <span class="header-switcher-item-info">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</span>
                     <button class="header-switcher-item-button">get started</button>
                 </div>
-                <div class="header-switcher-item">
+                <div class="header-switcher-item carousel-position-0">
                     <span class="header-switcher-item-subheader">Only CSS and HTML interactive</span>
                     <h1 class="header-switcher-item-header">Lorem, ipsum dolor.</h1>
                     <span class="header-switcher-item-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni soluta fugit temporibus corrupti nobis minima. Placeat, optio.</span>
                     <button class="header-switcher-item-button">get started</button>
                 </div>
-                <div class="header-switcher-item">
+                <div class="header-switcher-item carousel-position-0">
                     <span class="header-switcher-item-subheader">Lorem ipsum dolor sit.</span>
                     <h1 class="header-switcher-item-header">Portfolio PSD Template</h1>
                     <span class="header-switcher-item-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum molestiae adipisci ducimus exercitationem fugit tenetur, veniam impedit earum.</span>
                     <button class="header-switcher-item-button">get started</button>
                 </div>
-                <div class="header-switcher-item">
+                <div class="header-switcher-item carousel-position-0">
                     <span class="header-switcher-item-subheader">Unique and Modern Design (4)</span>
                     <h1 class="header-switcher-item-header">Portfolio PSD Template</h1>
                     <span class="header-switcher-item-info">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</span>
                     <button class="header-switcher-item-button">get started</button>
                 </div>
-                <div class="header-switcher-item">
+                <div class="header-switcher-item carousel-position-0">
                     <span class="header-switcher-item-subheader">Unique and Modern Design (5)</span>
                     <h1 class="header-switcher-item-header">Portfolio PSD Template</h1>
                     <span class="header-switcher-item-info">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</span>
                     <button class="header-switcher-item-button">get started</button>
                 </div>
             </div>
-            <a href="javascript:void(0)" class="header-switcher-next icon-right"></a>
+            <a href="javascript:pageWrapper.header.setCarouselPosition()" class="header-switcher-next icon-right"></a>
         </div>
     </header>
     <main class="main">
@@ -125,19 +126,12 @@
             <h3 class="projects-title">Our Latest Projects.</h3>
             <span class="projects-info">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</span>
             <div class="projects-classes">
-                <input type="radio" name="projects-class" id="projects-class-all" class="projects-classes-button"
-                       checked>
-                <label class="projects-classes-label" for="projects-class-all">All</label>
-                <input type="radio" name="projects-class" id="projects-class-web-design"
-                       class="projects-classes-button">
-                <label class="projects-classes-label" for="projects-class-web-design">Web Design</label>
-                <input type="radio" name="projects-class" id="projects-class-mobile" class="projects-classes-button">
-                <label class="projects-classes-label" for="projects-class-mobile">Mobile App</label>
-                <input type="radio" name="projects-class" id="projects-class-illustration"
-                       class="projects-classes-button">
-                <label class="projects-classes-label" for="projects-class-illustration">Illustration</label>
-                <input type="radio" name="projects-class" id="projects-class-photo" class="projects-classes-button">
-                <label class="projects-classes-label" for="projects-class-photo">Photography</label>
+                <!--//button.-->
+                <button class="projects-classes-button">All</button>
+                <button class="projects-classes-button">Web Design</button>
+                <button class="projects-classes-button">Mobile App</button>
+                <button class="projects-classes-button">Illustration</button>
+                <button class="projects-classes-button">Photography</button>
             </div>
             <div class="projects-cards">
                 <div class="projects-cards-item">
@@ -205,21 +199,18 @@
         </section>
         <section class="presentation">
             <div class="presentation-controls">
-                <a href="javascript:void(0)" class="icon-play presentation-play"></a>
+                <a href="javascript:pageWrapper.presentation.play()" class="icon-play presentation-play"></a>
                 <h3 class="presentation-title">Waxom Video Presentation</h3>
                 <span class="presentation-info">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</span>
+                <span class="presentation-timestamp">00:00</span>
             </div>
-            <video id=vid class="presentation-video" src="videos/presentation.mp4" poster="img/photo_10992.jpg"
-                   width="1920" height="705"></video>
+            <video id=vid class="presentation-video" src="videos/presentation.mp4" controls loop width="1920" height="705"></video>
         </section>
         <section class="for-mobile">
             <img src="img/iphone_in_hand_10962.png" width="423" height="616" alt="phone" class="for-mobile-image">
             <div class="for-mobile-description">
                 <h3 class="for-mobile-title">Excellent for Mobile Devices.</h3>
-                <p class="for-mobile-text">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                    lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me
-                    lius quod ii legunt saepius claritas. Eodem modo typi, qui
-                    nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                <p class="for-mobile-text">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
                 <div class="for-mobile-details-block">
                     <details class="for-mobile-detail">
                         <summary class="for-mobile-summary">Nam liber tempor cum soluta nobis eleifend option;</summary>
@@ -244,7 +235,7 @@
             </div>
         </section>
         <aside class="our-results">
-            <button class="our-results-button">
+            <div class="our-results-button">
                 <span class="our-results-button-number">3587</span>
                 <span class="our-results-button-title">Satisfied Clients</span>
                 <svg class="our-results-button-limits" width="140" height="200" xmlns="http://www.w3.org/2000/svg">
@@ -257,8 +248,8 @@
                     <line x1="0" y1="100%" x2="10%" y2="100%"/>
                     <line x1="0" y1="100%" x2="0" y2="90%"/>
                 </svg>
-            </button>
-            <button class="our-results-button">
+            </div>
+            <div class="our-results-button">
                 <span class="our-results-button-number">207</span>
                 <span class="our-results-button-title">Cups of coffee</span>
                 <svg class="our-results-button-limits" width="140" height="200" xmlns="http://www.w3.org/2000/svg">
@@ -271,8 +262,8 @@
                     <line x1="0" y1="100%" x2="10%" y2="100%"/>
                     <line x1="0" y1="100%" x2="0" y2="90%"/>
                 </svg>
-            </button>
-            <button class="our-results-button">
+            </div>
+            <div class="our-results-button">
                 <span class="our-results-button-number">2500</span>
                 <span class="our-results-button-title">Blog posts</span>
                 <svg class="our-results-button-limits" width="140" height="200" xmlns="http://www.w3.org/2000/svg">
@@ -285,8 +276,8 @@
                     <line x1="0" y1="100%" x2="10%" y2="100%"/>
                     <line x1="0" y1="100%" x2="0" y2="90%"/>
                 </svg>
-            </button>
-            <button class="our-results-button">
+            </div>
+            <div class="our-results-button">
                 <span class="our-results-button-number">873</span>
                 <span class="our-results-button-title">Likes</span>
                 <svg class="our-results-button-limits" width="140" height="200" xmlns="http://www.w3.org/2000/svg">
@@ -299,8 +290,8 @@
                     <line x1="0" y1="100%" x2="10%" y2="100%"/>
                     <line x1="0" y1="100%" x2="0" y2="90%"/>
                 </svg>
-            </button>
-            <button class="our-results-button">
+            </div>
+            <div class="our-results-button">
                 <span class="our-results-button-number">900</span>
                 <span class="our-results-button-title">We launched</span>
                 <svg class="our-results-button-limits" width="140" height="200" xmlns="http://www.w3.org/2000/svg">
@@ -313,7 +304,7 @@
                     <line x1="0" y1="100%" x2="10%" y2="100%"/>
                     <line x1="0" y1="100%" x2="0" y2="90%"/>
                 </svg>
-            </button>
+            </div>
         </aside>
         <section class="recent-posts">
             <h3 class="recent-posts-title">Recent Posts.</h3>
@@ -370,16 +361,16 @@
         </section>
         <div class="partners">
             <a href="javascript:void(0)" class="partners-link">
-                <img src="img/partner_1.png" alt="the barber" class="partners-image">
+                <img src="img/partner_1.png" alt="the barber" width="210" height="127" class="partners-image">
             </a>
             <a href="javascript:void(0)" class="partners-link">
-                <img src="img/partner_2.png" alt="delicious" class="partners-image">
+                <img src="img/partner_2.png" alt="delicious" width="210" height="210" class="partners-image">
             </a>
             <a href="javascript:void(0)" class="partners-link">
-                <img src="img/partner_3.png" alt="designers" class="partners-image">
+                <img src="img/partner_3.png" alt="designers" width="210" height="130" class="partners-image">
             </a>
             <a href="javascript:void(0)" class="partners-link">
-                <img src="img/partner_4.png" alt="royal" class="partners-image">
+                <img src="img/partner_4.png" alt="royal" width="210" height="164" class="partners-image">
             </a>
         </div>
     </main>
@@ -399,32 +390,27 @@
                 <div class="summary-posts">
                     <h4 class="summary-posts-title">Recent Posts</h4>
                     <div class="summary-post">
-                        <span class="summary-post-date">September 08, 2015</span>
+                        <time datetime="08.09.2015" class="summary-post-date">September 08, 2015</time>
                         <p class="summary-post-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
                     </div>
                     <div class="summary-post">
-                        <span class="summary-post-date">September 08, 2015</span>
+                        <time datetime="08.09.2015" class="summary-post-date">September 08, 2015</time>
                         <p class="summary-post-text">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
                     </div>
                     <div class="summary-post">
-                        <span class="summary-post-date">September 08, 2015</span>
-                        <p class="summary-post-text">Claritas est etiam processus dynamicus, qui sequitur mutationem per
-                            seacula quarta decima</p>
+                        <time datetime="08.09.2015" class="summary-post-date">September 08, 2015</time>
+                        <p class="summary-post-text">Claritas est etiam processus dynamicus, qui sequitur mutationem perseacula quarta decima</p>
                     </div>
                 </div>
                 <div class="summary-twitter">
                     <h4 class="summary-twitter-title">Our Twitter</h4>
                     <div class="summary-twitter-message">
                         <span class="summary-twitter-message-date">3 mins ago</span>
-                        <p class="summary-twitter-message-text"><a href="javascript:void(0)"
-                                                                   class="blue-mark">@waxom</a> Cum soluta nobis
-                            eleifend option congue nihil imperdiet doming</p>
+                        <p class="summary-twitter-message-text"><a href="javascript:void(0)" class="blue-mark">@waxom</a> Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
                     </div>
                     <div class="summary-twitter-message">
                         <span class="summary-twitter-message-date">5 hours ago</span>
-                        <p class="summary-twitter-message-text">Mirum est <a href="javascript:void(0)"
-                                                                             class="blue-mark">#envato</a> notare quam
-                            littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
+                        <p class="summary-twitter-message-text">Mirum est <a href="javascript:void(0)" class="blue-mark">#envato</a> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
                     </div>
                     <div class="summary-twitter-message">
                         <span class="summary-twitter-message-date">20 days ago</span>
