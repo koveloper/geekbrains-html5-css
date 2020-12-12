@@ -7,8 +7,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1200px;
+    max-width: 1170px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 0 0 14px;
 
     &-title {
         .create-section-title(#555555);
@@ -29,7 +31,7 @@
 
     &-classes {
         display: flex;
-        margin: 0 0 25px 0;
+        margin: 0 0 40px 0;
 
         &-button {
             display: none;
@@ -71,11 +73,13 @@
     &-cards {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
 
         &-item {
             display: flex;
             flex-direction: column;
-            border: 15px solid transparent;
             position: relative;
 
             &-image {
@@ -168,11 +172,23 @@
             &:hover>button {
                 display: block;
             }
+
+            &:nth-child(1) {
+                margin: 0 0 27px 0;
+            }
+
+            &:nth-child(2) {
+                margin: 0 0 27px 0;
+            }
+
+            &:nth-child(3) {
+                margin: 0 0 27px 0;
+            }
         }
     }
 
     &-more {
         .create-button();
-        margin: 21px 0 80px 0;
+        margin: 36px 0 80px 0;
     }
 }

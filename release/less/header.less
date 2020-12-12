@@ -33,7 +33,7 @@
             line-height: 1.2;
             font-weight: 400;
             letter-spacing: -0.01em;
-            margin: 0 auto 0 1px;
+            margin: 0 auto 0 15px;
             display: flex;
             align-items: center;
             text-decoration: none;
@@ -115,10 +115,10 @@
     &-dots {
         order: 3;
         display: flex;
-        margin: auto 0 42px 0;
+        margin: auto 0 42px 12px;
 
         &-item {
-            margin: 0 10px 0 0;
+            margin: 0 9px 0 0;
             transition: @default-transition;
 
             &:hover::after {
@@ -154,7 +154,8 @@
     }
 
     &-switcher {
-        padding: 0 150px;
+        // padding: 0 150px;
+        max-width: 1635px;
         margin: 276px 0 0 0;
         display: flex;
         align-items: center;
@@ -166,10 +167,12 @@
 
         &-prev {
             .create-header-arrow();
+            margin: 0 0 15px 14px;
         }
 
         &-next {
             .create-header-arrow();
+            margin: 0 0 15px 0;
         }
 
         &-items {
@@ -199,7 +202,8 @@
                 line-height: 1;
                 font-weight: 800;
                 color: @light-color;
-                margin: 9px 0 19px 0;
+                margin: 9px 0 16px 0;
+                letter-spacing: 0.005em;
             }
 
             &-info {
@@ -213,6 +217,7 @@
                 font-weight: 300;
                 color: @light-color;
                 margin: 0 0 48px 0;
+                letter-spacing: 0.05em;
             }
 
             &-button {
