@@ -811,12 +811,12 @@ body {
   border: none;
   outline: none;
   position: absolute;
-  top: 106px;
+  top: 105px;
   display: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
-  left: 144px;
+  left: 140px;
 }
 .projects-cards-item-link:hover {
   color: #c7b299;
@@ -833,12 +833,12 @@ body {
   border: none;
   outline: none;
   position: absolute;
-  top: 106px;
+  top: 105px;
   display: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
-  left: 198px;
+  left: 194px;
 }
 .projects-cards-item-search:hover {
   color: #c7b299;
@@ -1566,10 +1566,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 3px 0px 81px 31px;
+  padding: 0 0 78px 0;
 }
 .summary-wrapper {
-  max-width: 1187px;
+  max-width: 1216px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1577,13 +1577,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0px 15px 0 31px;
+  padding: 2px 11px 0 31px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .summary-company {
   width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin: 69px 30px 0 0;
+  max-width: 275px;
+  margin: 69px 0 0 0;
 }
 .summary-company-logo {
   font-size: 34px;
@@ -1608,12 +1610,12 @@ body {
 .summary-company-info {
   font-family: Montserrat;
   font-size: 14px;
-  line-height: 25px;
+  line-height: 24px;
   font-weight: 300;
   color: #555555;
   word-wrap: break-word;
   word-break: break-all;
-  margin: 18px 0 20px 0;
+  margin: 18px 0 24px 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   letter-spacing: 0.05em;
@@ -1662,16 +1664,14 @@ body {
 }
 .summary-posts {
   width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin: 100px 30px 0 0;
+  max-width: 275px;
+  margin: 100px 0 0 0;
 }
 .summary-posts-title {
   font-size: 24px;
   font-weight: 700;
   color: #ffffff;
-  margin: 0 0 23px 0;
+  margin: 0 0 22px 0;
   padding: 0;
 }
 .summary-post {
@@ -1726,16 +1726,14 @@ body {
 }
 .summary-twitter {
   width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin: 100px 30px 0 0;
+  max-width: 275px;
+  margin: 100px 0 0 0;
 }
 .summary-twitter-title {
   font-size: 24px;
   font-weight: 700;
   color: #ffffff;
-  margin: 0 0 23px 0;
+  margin: 0 0 22px 0;
   padding: 0;
 }
 .summary-twitter-message {
@@ -1794,18 +1792,15 @@ body {
 }
 .summary-dribbble {
   width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  max-width: 275px;
   margin: 100px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1816,7 +1811,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   color: #ffffff;
-  margin: 0 0 23px 0;
+  margin: 0 0 26px 0;
   padding: 0;
   width: 100%;
 }
@@ -1850,7 +1845,7 @@ body {
   padding: 39px 0 52px 0;
 }
 .support-wrapper {
-  max-width: 1187px;
+  max-width: 1216px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1858,6 +1853,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0px 15px 0 31px;
+  padding: 2px 11px 0 31px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .support-block-1 {
   display: -webkit-box;
