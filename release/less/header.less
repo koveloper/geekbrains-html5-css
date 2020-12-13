@@ -1,88 +1,6 @@
 //out: false
 
 @player-width: 594px;
-//@timing-func: cubic-bezier(.25, .72, .35, 1);
-//@animation-duration: 25s;
-
-//@keyframes header_player {
-//    0% {
-//        margin: 0;
-//    }
-//    10% {
-//        margin: 0 0 0 -(@player-width * 1);
-//    }
-//    20% {
-//        margin: 0 0 0 -(@player-width * 1);
-//    }
-//    30% {
-//        margin: 0 0 0 -(@player-width * 2);
-//    }
-//    40% {
-//        margin: 0 0 0 -(@player-width * 2);
-//    }
-//    50% {
-//        margin: 0 0 0 -(@player-width * 3);
-//    }
-//    60% {
-//        margin: 0 0 0 -(@player-width * 3);
-//    }
-//    70% {
-//        margin: 0 0 0 -(@player-width * 4);
-//    }
-//    80% {
-//        margin: 0 0 0 -(@player-width * 4);
-//    }
-//    90% {
-//        margin: 0;
-//    }
-//}
-//
-//@keyframes header_player_p1 {
-//    0% {
-//        opacity: 1;
-//    }
-//    10% {
-//        opacity: 0.3;
-//    }
-//    100% {
-//        opacity: 1;
-//    }
-//}
-//
-//@keyframes header_player_p2 {
-//    0% {opacity: 0.3;}
-//    10% {opacity: 1;}
-//    20% {opacity: 1;}
-//    30% {opacity: 0.3;}
-//    100% {opacity: 0.3;}
-//}
-//
-//@keyframes header_player_p3 {
-//    0% {opacity: 0.3;}
-//    20% {opacity: 0.3;}
-//    30% {opacity: 1;}
-//    40% {opacity: 1;}
-//    50% {opacity: 0.3;}
-//    100% {opacity: 0.3;}
-//}
-//
-//@keyframes header_player_p4 {
-//    0% {opacity: 0.3;}
-//    40% {opacity: 0.3;}
-//    50% {opacity: 1;}
-//    60% {opacity: 1;}
-//    70% {opacity: 0.3;}
-//    100% {opacity: 0.3;}
-//}
-//
-//@keyframes header_player_p5 {
-//    0% {opacity: 0.3;}
-//    60% {opacity: 0.3;}
-//    70% {opacity: 1;}
-//    80% {opacity: 1;}
-//    90% {opacity: 0.3;}
-//    100% {opacity: 0.3;}
-//}
 
 .create-header-arrow() {
     text-decoration: none;
@@ -93,7 +11,7 @@
 
 .header {
     background-image: url(../img/bg_photo_11949.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 1024px;
     display: flex;
@@ -117,7 +35,7 @@
             line-height: 1.2;
             font-weight: 400;
             letter-spacing: -0.01em;
-            margin: 0 auto 0 15px;
+            margin: 0 auto 0 0;
             display: flex;
             align-items: center;
             text-decoration: none;
@@ -199,7 +117,7 @@
     &-dots {
         order: 3;
         display: flex;
-        margin: auto 0 42px 12px;
+        margin: auto 0 42px 0;
 
         &-item {
             margin: 0 9px 0 0;
@@ -238,24 +156,24 @@
     }
 
     &-switcher {
-        max-width: 1635px;
+        max-width: 1620px;
+        width: 100%;
         margin: 276px 0 0 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
         box-sizing: border-box;
         justify-self: flex-end;
         order: 2;
 
         &-prev {
             .create-header-arrow();
-            margin: 0 0 15px 14px;
+            margin: 5px 0 0 0;
         }
 
         &-next {
             .create-header-arrow();
-            margin: 0 0 15px 0;
+            margin: 5px 0 0 0;
         }
 
         &-items {
@@ -359,24 +277,6 @@
                     opacity: 1;
                 }
             }
-
-
-
-            //&:hover>:nth-child(1) {
-            //    animation-play-state: paused;
-            //}
-            //&:hover>:nth-child(2) {
-            //    animation-play-state: paused;
-            //}
-            //&:hover>:nth-child(3) {
-            //    animation-play-state: paused;
-            //}
-            //&:hover>:nth-child(4) {
-            //    animation-play-state: paused;
-            //}
-            //&:hover>:nth-child(5) {
-            //    animation-play-state: paused;
-            //}
         }
 
         &-item {
@@ -385,40 +285,6 @@
             flex-direction: column;
             align-items: center;
             transition: @default-transition;
-
-            //&:first-child {
-            //    animation: header_player  @animation-duration @timing-func (@animation-duration / 5) infinite normal forwards,
-            //                header_player_p1 @animation-duration @timing-func (@animation-duration / 5) infinite normal forwards;
-            //}
-            //
-            //.create-animation() {
-            //    animation-delay: (@animation-duration / 5);
-            //    animation-duration: @animation-duration;
-            //    animation-iteration-count: infinite;
-            //    animation-direction: normal;
-            //    animation-timing-function: @timing-func;
-            //    animation-fill-mode: forwards;
-            //}
-            //
-            //&:nth-child(2) {
-            //    animation-name: header_player_p2;
-            //    .create-animation();
-            //}
-            //
-            //&:nth-child(3) {
-            //    animation-name: header_player_p3;
-            //    .create-animation();
-            //}
-            //
-            //&:nth-child(4) {
-            //    animation-name: header_player_p4;
-            //    .create-animation();
-            //}
-            //
-            //&:nth-child(5) {
-            //    animation-name: header_player_p5;
-            //    .create-animation();
-            //}
 
             &-subheader {
                 font-family: @font-family-base;
