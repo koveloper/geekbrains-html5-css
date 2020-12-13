@@ -11,9 +11,8 @@
 
 .header {
     background-image: url(../img/bg_photo_11949.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 1024px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +26,7 @@
         align-items: center;
         justify-content: flex-start;
         justify-self: flex-start;
-        order: 1;
+        box-sizing: border-box;
 
         &-logo {
             font-family: @font-family-base;
@@ -115,9 +114,8 @@
     }
 
     &-dots {
-        order: 3;
         display: flex;
-        margin: auto 0 42px 0;
+        margin: 352px 0 42px 0;
 
         &-item {
             margin: 0 9px 0 0;
@@ -156,15 +154,14 @@
     }
 
     &-switcher {
-        max-width: 1620px;
         width: 100%;
+        padding: 0 150px;
         margin: 276px 0 0 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
         box-sizing: border-box;
         justify-self: flex-end;
-        order: 2;
 
         &-prev {
             .create-header-arrow();
@@ -180,6 +177,7 @@
             display: flex;
             flex-direction: row;
             max-width: @player-width;
+            width: 100%;
             overflow: hidden;
             transition: @default-transition;
 
