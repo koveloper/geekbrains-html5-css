@@ -2361,3 +2361,56 @@ body {
     padding: 0 10px;
   }
 }
+@media (max-width: 400px) {
+  .header-nav {
+    padding: 0 4px;
+  }
+  .header-nav-magazine {
+    margin: 0 10px 0 0;
+  }
+  .header-nav-search {
+    margin: 0 10px 0 0;
+  }
+  .projects-cards-item-image {
+    width: 277px;
+    height: 177px;
+  }
+  .projects-cards-item-link {
+    left: 100px;
+    top: 78px;
+  }
+  .projects-cards-item-search {
+    left: 140px;
+    top: 78px;
+  }
+  .for-mobile-image-secondary {
+    width: 158px;
+    height: 231px;
+  }
+  .recent-posts-item {
+    max-width: 277px;
+  }
+  .recent-posts-item-image {
+    width: 277px;
+    height: 165px;
+  }
+  .partners > .partners-link:nth-child(1) > img {
+    width: 58px;
+    height: 36px;
+  }
+  .partners > .partners-link:nth-child(2) > img {
+    width: 58px;
+    height: 58px;
+  }
+  .partners > .partners-link:nth-child(3) > img {
+    width: 58px;
+    height: 36px;
+  }
+  .partners > .partners-link:nth-child(4) > img {
+    width: 58px;
+    height: 45px;
+  }
+  .footer .summary {
+    padding: 0 8px 20px 8px;
+  }
+}

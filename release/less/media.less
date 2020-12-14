@@ -653,3 +653,77 @@
         }
     }
 }
+
+@media (max-width: 400px) {
+    .header {
+        &-nav {
+            padding: 0 4px;
+            &-magazine {
+                margin: 0 10px 0 0;
+            }
+            &-search {
+                margin: 0 10px 0 0;
+            }
+        }
+    }
+
+    .projects {
+        &-cards {
+            &-item {
+                &-image {
+                    width: 277px;
+                    height: 177px;
+                }
+                &-link {
+                    left: 100px;
+                    top: 78px;
+                }
+                &-search {
+                    left: 140px;
+                    top: 78px;
+                }
+            }
+        }
+    }
+
+    .for-mobile {
+        &-image-secondary {
+            width: 158px;
+            height: 231px;
+        }
+    }
+    .recent-posts {
+        &-item {
+            max-width: 277px;
+            &-image {
+                width: 277px;
+                height: 165px;
+            }
+        }
+    }
+    .partners {
+        &>&-link {
+            &:nth-child(1) > img {
+                width: 58px;
+                height: 36px;
+            }
+            &:nth-child(2) > img {
+                width: 58px;
+                height: 58px;
+            }
+            &:nth-child(3) > img {
+                width: 58px;
+                height: 36px;
+            }
+            &:nth-child(4) > img {
+                width: 58px;
+                height: 45px;
+            }
+        }
+    }
+    .footer {
+        .summary {
+            padding: 0 8px 20px 8px;
+        }
+    }
+}
