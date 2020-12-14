@@ -7,13 +7,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1200px;
+    max-width: 1170px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 0 0 14px;
 
     &-title {
         .create-section-title(#555555);
         padding: 0;
-        margin: 80px 0 24px 0;
+        margin: 76px 0 15px 0;
     }
 
     &-info {
@@ -22,21 +24,25 @@
         line-height: 28px;
         font-weight: 300;
         color: #8c8c8c;
-        width: 760px;
+        max-width: 776px;
         text-align: center;
-        margin: 0 0 40px 0;
+        margin: 0 0 34px 0;
     }
 
     &-classes {
         display: flex;
-        margin: 0 0 25px 0;
+        margin: 0 0 40px 0;
 
         &-button {
             display: none;
         }
 
         &-label {
-            padding: 10px 21px;
+            min-width: 25px;
+            padding: 5px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border: 1px solid #ebebeb;
             border-radius: 3px;
             margin: 0 10px 0 0;
@@ -67,11 +73,13 @@
     &-cards {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
 
         &-item {
             display: flex;
             flex-direction: column;
-            border: 15px solid transparent;
             position: relative;
 
             &-image {
@@ -79,14 +87,14 @@
             }
 
             &-footer {
-                padding: 30px 0 28px 28px;
+                padding: 26px 0 26px 29px;
                 background-color: #fbfaf8;
                 position: relative;
                 z-index: 20;
                 transition: @default-transition;
 
                 &-title {
-                    margin: 0 0 14px 0;
+                    margin: 0 0 6px 0;
                     padding: 0;
                     font-size: 20px;
                     line-height: 1.2;
@@ -112,6 +120,7 @@
                     border-bottom: @project-card-triangle-height solid #fbfaf8;
                     position: absolute;
                     top: -@project-card-triangle-height;
+                    left: 20px;
                 }
             }
 
@@ -163,11 +172,23 @@
             &:hover>button {
                 display: block;
             }
+
+            &:nth-child(1) {
+                margin: 0 0 27px 0;
+            }
+
+            &:nth-child(2) {
+                margin: 0 0 27px 0;
+            }
+
+            &:nth-child(3) {
+                margin: 0 0 27px 0;
+            }
         }
     }
 
     &-more {
         .create-button();
-        margin: 25px 0 80px 0;
+        margin: 36px 0 80px 0;
     }
 }

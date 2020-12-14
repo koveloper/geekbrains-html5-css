@@ -1,0 +1,131 @@
+.our-results {
+    background-color: #f4f5f8;
+    background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+    padding: 66px 0 59px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        max-width: 200px;
+        width: 100%;
+        border: none;
+        outline: none;
+        transition: @default-transition;
+        cursor: pointer;
+        position: relative;
+
+        &:first-child {
+            margin: 0 0 0 17px;
+        }
+
+        &-limits {
+            position: absolute;
+            opacity: 0;
+            transition: @default-transition;
+            stroke-width: 3;
+        }
+
+        &:hover>&-limits {
+            opacity: 1;
+            stroke: white;
+        }
+
+        &:active>&-limits {
+            opacity: 1;
+            stroke: @light-hover-color;
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+
+        &-number {
+            transition: @default-transition;
+            font-family: @font-family-secondary;
+            font-size: 48px;
+            line-height: 36px;
+            font-weight: 200;
+            color: #ffffff;
+            margin: 0 0 12px 0;
+        }
+
+        &-title {
+            transition: @default-transition;
+            font-family: @font-family-secondary;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300;
+            align-items: center;
+            text-transform: uppercase;
+            color: #c7b299;
+        }
+
+        .before() {
+            transition: @default-transition;
+            font-family: @font-family-icons;
+            font-size: 44px;
+            color: #c7b299;
+            margin: 0 0 28px 0;
+        }
+
+        &:nth-child(1)::before {
+            content: "\e904";
+            .before();
+        }
+
+        &:nth-child(2)::before {
+            content: "\e905";
+            .before();
+        }
+
+        &:nth-child(3)::before {
+            content: "\e906";
+            .before();
+        }
+
+        &:nth-child(4)::before {
+            content: "\e907";
+            .before();
+        }
+
+        &:nth-child(5)::before {
+            content: "\e908";
+            .before();
+        }
+
+        .after() {
+            content: "";
+            transition: @default-transition;
+            margin: 26px 0 0 0;
+            width: 30px;
+            height: 2px;
+            background-color: #ffffff;
+        }
+
+        &:nth-child(1)::after {
+            .after();
+        }
+
+        &:nth-child(2)::after {
+            .after();
+        }
+
+        &:nth-child(3)::after {
+            .after();
+        }
+
+        &:nth-child(4)::after {
+            .after();
+        }
+
+        &:nth-child(5)::after {
+            .after();
+        }
+    }
+}
