@@ -114,6 +114,10 @@
             cursor: pointer;
             text-align: center;
             border-radius: 8px;
+            color: transparent;
+            &::-webkit-search-cancel-button {
+                display: none;
+            }
 
             &::before {
                 content: 'sdfsdf';
@@ -129,7 +133,9 @@
             &:active {
                 transition: none;
             }
+
             &:focus {
+                color: black;
                 background-image: none;
                 position: fixed;
                 left: 50%;
@@ -140,6 +146,9 @@
                 background-color: white;
                 box-shadow: 0px 0px 100px 200px rgba(0,0,0,0.75);
                 transition: @default-transition;
+                &::-webkit-search-cancel-button {
+                    display: block;
+                }
             }
         }
 

@@ -178,6 +178,10 @@ body {
   cursor: pointer;
   text-align: center;
   border-radius: 8px;
+  color: transparent;
+}
+.header-nav-search::-webkit-search-cancel-button {
+  display: none;
 }
 .header-nav-search::before {
   content: 'sdfsdf';
@@ -194,6 +198,7 @@ body {
   transition: none;
 }
 .header-nav-search:focus {
+  color: black;
   background-image: none;
   position: fixed;
   left: 50%;
@@ -204,6 +209,9 @@ body {
   background-color: white;
   box-shadow: 0px 0px 100px 200px rgba(0, 0, 0, 0.75);
   transition: 0.3s;
+}
+.header-nav-search:focus::-webkit-search-cancel-button {
+  display: block;
 }
 .header-nav-mobile-menu-svg {
   stroke: #fff;
