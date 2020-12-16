@@ -188,6 +188,10 @@ body {
 }
 .header-nav-search:hover {
   background-image: url("../img/icon_search_12272-hover.png");
+  transition: 0.3s;
+}
+.header-nav-search:active {
+  transition: none;
 }
 .header-nav-search:focus {
   background-image: none;
@@ -1627,6 +1631,7 @@ body {
   flex-direction: column;
   padding: 17px 0;
   cursor: pointer;
+  text-decoration: none;
 }
 .summary-post:nth-child(2) {
   padding: 0 0 17px 0;
@@ -1640,6 +1645,9 @@ body {
 }
 .summary-post:hover > .summary-post-text {
   color: #c7b299;
+}
+.summary-post:active {
+  opacity: 0.6;
 }
 .summary-post-date {
   font-family: Montserrat;
@@ -1683,6 +1691,7 @@ body {
   flex-direction: column-reverse;
   padding: 17px 0;
   cursor: pointer;
+  text-decoration: none;
 }
 .summary-twitter-message:nth-child(2) {
   padding: 0 0 17px 0;
@@ -1696,6 +1705,9 @@ body {
 }
 .summary-twitter-message:hover > .summary-twitter-message-text {
   color: #c7b299;
+}
+.summary-twitter-message:active {
+  opacity: 0.6;
 }
 .summary-twitter-message-date {
   font-family: Montserrat;
