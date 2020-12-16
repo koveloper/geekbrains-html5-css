@@ -149,6 +149,7 @@
         @default-padding: 17px;
         padding: @default-padding 0;
         cursor: pointer;
+        text-decoration: none;
 
         &:nth-child(2) {
             padding: 0 0 @default-padding 0;
@@ -165,6 +166,10 @@
 
         &:hover>&-text {
             color: #c7b299;
+        }
+
+        &:active {
+            opacity: 0.6;
         }
 
         &-date {

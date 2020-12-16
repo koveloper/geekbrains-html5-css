@@ -98,11 +98,11 @@
         }
 
         &-search {
-            transition: @default-transition;
+            transition: none;
             display: block;
             width: 26px;
             height: 26px;
-            font-size: 16px;
+            font-size: 20px;
             align-items: center;
             justify-content: center;
             outline: none;
@@ -113,17 +113,33 @@
             background-size: contain;
             cursor: pointer;
             text-align: center;
+            border-radius: 8px;
+
+            &::before {
+                content: 'sdfsdf';
+                position: relative;
+                width: 26px;
+                height: 26px;
+                display: block;
+            }
             &:hover {
                 background-image: url("../img/icon_search_12272-hover.png");
+                transition: @default-transition;
+            }
+            &:active {
+                transition: none;
             }
             &:focus {
                 background-image: none;
                 position: fixed;
                 left: 50%;
-                top: 20px;
-                width: 300px;
+                top: 120px;
+                width: 80%;
+                height: 32px;
                 transform: translate(-50%, 0);
                 background-color: white;
+                box-shadow: 0px 0px 100px 200px rgba(0,0,0,0.75);
+                transition: @default-transition;
             }
         }
 

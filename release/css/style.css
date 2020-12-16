@@ -162,11 +162,11 @@ body {
   margin: 0 26px 0 60px;
 }
 .header-nav-search {
-  transition: 0.3s;
+  transition: none;
   display: block;
   width: 26px;
   height: 26px;
-  font-size: 16px;
+  font-size: 20px;
   align-items: center;
   justify-content: center;
   outline: none;
@@ -177,18 +177,33 @@ body {
   background-size: contain;
   cursor: pointer;
   text-align: center;
+  border-radius: 8px;
+}
+.header-nav-search::before {
+  content: 'sdfsdf';
+  position: relative;
+  width: 26px;
+  height: 26px;
+  display: block;
 }
 .header-nav-search:hover {
   background-image: url("../img/icon_search_12272-hover.png");
+  transition: 0.3s;
+}
+.header-nav-search:active {
+  transition: none;
 }
 .header-nav-search:focus {
   background-image: none;
   position: fixed;
   left: 50%;
-  top: 20px;
-  width: 300px;
+  top: 120px;
+  width: 80%;
+  height: 32px;
   transform: translate(-50%, 0);
   background-color: white;
+  box-shadow: 0px 0px 100px 200px rgba(0, 0, 0, 0.75);
+  transition: 0.3s;
 }
 .header-nav-mobile-menu-svg {
   stroke: #fff;
@@ -1616,6 +1631,7 @@ body {
   flex-direction: column;
   padding: 17px 0;
   cursor: pointer;
+  text-decoration: none;
 }
 .summary-post:nth-child(2) {
   padding: 0 0 17px 0;
@@ -1629,6 +1645,9 @@ body {
 }
 .summary-post:hover > .summary-post-text {
   color: #c7b299;
+}
+.summary-post:active {
+  opacity: 0.6;
 }
 .summary-post-date {
   font-family: Montserrat;
@@ -1672,6 +1691,7 @@ body {
   flex-direction: column-reverse;
   padding: 17px 0;
   cursor: pointer;
+  text-decoration: none;
 }
 .summary-twitter-message:nth-child(2) {
   padding: 0 0 17px 0;
@@ -1685,6 +1705,9 @@ body {
 }
 .summary-twitter-message:hover > .summary-twitter-message-text {
   color: #c7b299;
+}
+.summary-twitter-message:active {
+  opacity: 0.6;
 }
 .summary-twitter-message-date {
   font-family: Montserrat;
