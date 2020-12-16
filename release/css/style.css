@@ -1632,6 +1632,7 @@ body {
   padding: 17px 0;
   cursor: pointer;
   text-decoration: none;
+  transition: 0.3s;
 }
 .summary-post:nth-child(2) {
   padding: 0 0 17px 0;
@@ -1692,6 +1693,7 @@ body {
   padding: 17px 0;
   cursor: pointer;
   text-decoration: none;
+  transition: 0.3s;
 }
 .summary-twitter-message:nth-child(2) {
   padding: 0 0 17px 0;
