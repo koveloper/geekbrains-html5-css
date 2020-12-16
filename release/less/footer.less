@@ -3,6 +3,8 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .footer {
@@ -12,21 +14,23 @@
 
 .summary {
     background-color: #191919;
-    padding: 0 0 80px 0;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding: 3px 0px 81px 31px;
-    @between-blocks: 30px;
+    padding: 0 0 78px 0;
 
     &-wrapper {
         .wrapper();
     }
 
-    &-company {
+    .add-default-sizes(@top-margin: 100px) {
         width: 100%;
-        flex-grow: 1;
-        margin: 69px @between-blocks 0 0;
+        max-width: 270px;
+        margin: @top-margin 0 0 0;
+    }
+
+    &-company {
+        .add-default-sizes(69px);
 
         &-logo {
             font-size: 34px;
@@ -50,12 +54,12 @@
         &-info {
             font-family: @font-family-secondary;
             font-size: 14px;
-            line-height: 25px;
+            line-height: 24px;
             font-weight: 300;
             color: #555555;
             word-wrap: break-word;
             word-break: break-all;
-            margin: 18px 0 20px 0;
+            margin: 18px 0 24px 0;
             transition: @default-transition;
             letter-spacing: 0.05em;
 
@@ -106,11 +110,11 @@
         }
     }
 
-    .title() {
+    .title(@margin-after: 22px) {
         font-size: 24px;
         font-weight: 700;
         color: #ffffff;
-        margin: 0 0 23px 0;
+        margin: 0 0 @margin-after 0;
         padding: 0;
     }
 
@@ -138,18 +142,13 @@
         transition: @default-transition;
     }
 
-    .add-default-sizes(@right-margin: @between-blocks) {
-        width: 100%;
-        flex-grow: 1;
-        margin: 100px @right-margin 0 0;
-    }
-
     .msg-view(@flex-direction: column, @date-margin: 3px, @text-margin: 0) {
         border-bottom: 2px solid #252525;
         display: flex;
         flex-direction: @flex-direction;
-        @default-padding: 16px;
+        @default-padding: 17px;
         padding: @default-padding 0;
+        cursor: pointer;
 
         &:nth-child(2) {
             padding: 0 0 @default-padding 0;
@@ -210,7 +209,7 @@
     }
 
     &-dribbble {
-        .add-default-sizes(0);
+        .add-default-sizes();
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -218,7 +217,7 @@
         align-content: flex-start;
 
         &-title {
-            .title();
+            .title(26px);
             width: 100%;
         }
 
@@ -328,19 +327,5 @@
         &:active {
             color: @light-active-color  !important;
         }
-
-        // &:nth-child(1) {
-        //     color: #959595;
-        //     padding: 0 @padding 0 0;
-        // }
-
-        // &:nth-child(1)::before {
-        //     content: "Copyright © 2015";
-        //     color: #555555;
-        //     margin: 0 @before-margin 0 0;
-        // }
-
-
-
     }
 }

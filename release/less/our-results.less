@@ -1,3 +1,107 @@
+@keyframes clients {
+    0% {
+        opacity: 0;
+        max-width: 0;
+    }
+    10% {
+        opacity: 1;
+        max-width: 200px;
+    }
+    20% {
+        opacity: 0;
+        max-width: 0px;
+    }
+    100% {
+        opacity: 0;
+        max-width: 0px;
+    }
+}
+@keyframes cofee {
+    0% {
+        opacity: 0;
+        max-width: 0;
+    }
+    20% {
+        opacity: 0;
+        max-width: 0px;
+    }
+    30% {
+        opacity: 1;
+        max-width: 200px;
+    }
+    40% {
+        opacity: 0;
+        max-width: 0px;
+    }
+    100% {
+        opacity: 0;
+        max-width: 0px;
+    }
+}
+@keyframes posts {
+    0% {
+        opacity: 0;
+        max-width: 0;
+    }
+    40% {
+        opacity: 0;
+        max-width: 0px;
+    }
+    50% {
+        opacity: 1;
+        max-width: 200px;
+    }
+    60% {
+        opacity: 0;
+        max-width: 0;
+    }
+    100% {
+        opacity: 0;
+        max-width: 0px;
+    }
+}
+@keyframes likes {
+    0% {
+        opacity: 0;
+        max-width: 0;
+    }
+    60% {
+        opacity: 0;
+        max-width: 0px;
+    }
+    70% {
+        opacity: 1;
+        max-width: 200px;
+    }
+    80% {
+        opacity: 0;
+        max-width: 0;
+    }
+    100% {
+        opacity: 0;
+        max-width: 0px;
+    }
+}
+
+@keyframes launched {
+    0% {
+        opacity: 0;
+        max-width: 0;
+    }
+    80% {
+        opacity: 0;
+        max-width: 0px;
+    }
+    90% {
+        opacity: 1;
+        max-width: 200px;
+    }
+    100% {
+        opacity: 0;
+        max-width: 0px;
+    }
+}
+
 .our-results {
     background-color: #f4f5f8;
     background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
@@ -11,18 +115,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: transparent;
         max-width: 200px;
         width: 100%;
-        border: none;
-        outline: none;
         transition: @default-transition;
         cursor: pointer;
         position: relative;
-
-        &:first-child {
-            margin: 0 0 0 17px;
-        }
 
         &-limits {
             position: absolute;

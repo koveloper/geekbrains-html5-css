@@ -1,5 +1,3 @@
-//out: false
-
 @project-card-triangle-height: 10px;
 @project-card-triangle-width: 30px;
 
@@ -10,7 +8,7 @@
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 0 0 14px;
+    padding: 0;
 
     &-title {
         .create-section-title(#555555);
@@ -32,14 +30,18 @@
     &-classes {
         display: flex;
         margin: 0 0 40px 0;
+        display: flex;
+        margin: 0 0 40px 0;
+        justify-content: space-between;
+        justify-items: stretch;
+        width: 100%;
+        max-width: 626px;
+        box-sizing: border-box;
+        padding: 0 8px 0 13px;
 
         &-button {
-            display: none;
-        }
-
-        &-label {
-            min-width: 25px;
-            padding: 5px 20px;
+            min-width: 70px;
+            padding: 5px 0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -51,22 +53,27 @@
             line-height: 21px;
             font-weight: 300;
             color: #8c8c8c;
-            transition: @default-transition;
+            transition: 0.3s;
+            outline: none;
+            background: none;
+            cursor: pointer;
+            box-sizing: border-box;
+            cursor: pointer;
+
+            &:not(:first-child) {
+                width: 100%;
+            }
 
             &:hover {
                 border: 1px solid #998675;
                 background-color: #fbfaf8;
             }
-        }
 
-        &-button:checked+label {
-            border: 1px solid transparent !important;
-            background-color: #998675;
-            color: white;
-        }
-
-        &>:last-child {
-            margin: 0;
+            &:active{
+                border: 1px solid transparent !important;
+                background-color: #998675;
+                color: white;
+            }
         }
     }
 
@@ -133,7 +140,7 @@
                 border: none;
                 outline: none;
                 position: absolute;
-                top: 106px;
+                top: 105px;
                 display: none;
                 transition: @default-transition;
                 cursor: pointer;
@@ -149,12 +156,12 @@
 
             &-link {
                 .create-transparent-button();
-                left: 144px;
+                left: 140px;
             }
 
             &-search {
                 .create-transparent-button();
-                left: 198px;
+                left: 194px;
             }
 
             &:hover>&-footer {

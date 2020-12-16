@@ -1,13 +1,12 @@
-//out: false
-
 .advertisement {
-    margin: 80px auto 77px auto;
-    padding: 0 0 0 20px;
+    margin: 80px auto 79px auto;
+    padding: 0 8px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 1157px;
-    justify-content: space-around;
+    max-width: @max-active-width;
+    justify-content: space-between;
 
     &-item {
         display: flex;
@@ -17,15 +16,11 @@
         word-break: break-all;
         white-space: pre-wrap;
         width: 100%;
-        max-width: 270px;
-        margin: 0 47px 0 0;
+        max-width: 264px;
+        margin: 0;
         user-select: none;
         cursor: pointer;
         transition: @default-transition;
-
-        // &:nth-child(2) {
-        //     max-width: 264px;
-        // }
 
         &-title {
             font-size: 22px;
@@ -61,7 +56,7 @@
         &:after {
             content: '';
             transition: @default-transition;
-            margin: 28px 0 0 0;
+            margin: 26px 0 0 0;
             width: 70px;
             height: 3px;
             background-color: #f1eee9;
